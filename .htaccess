@@ -1,0 +1,26 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+php_flag display_errors on
+Options -Indexes 
+order deny,allow
+
+php_value upload_max_filesize 512M
+php_value post_max_size 512M
+php_value memory_limit 512M
+
+#ErrorDocument 403 include/template/E_403.htm
+#ErrorDocument 404 include/template/E_404.htm
+
+RewriteEngine On
+
+#base per le lingue
+RewriteRule ^it(/.*|$) index.php
+RewriteRule ^en(/.*|$) index.php
+
+#Pagine non raggiungibili
+RewriteRule ^_ include/view/other/template/E_403.htm
+RewriteRule ^include include/view/other/template/E_403.htm
+
+#Altre Basi
+RewriteRule img/captcha.png index.php

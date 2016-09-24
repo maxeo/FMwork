@@ -1,0 +1,96 @@
+/***          Elementi dell'Header'         ***/
+.fadelogo{
+    height: 323px;
+    margin-bottom:0;
+}
+.rollinglogo{
+    height: 0;
+    overflow: visible;
+}
+.rollinglogo img{
+    transition: all 4s ease 0s;
+    height: 213px;
+    opacity: 0;
+    display: block;
+    position: relative;
+    bottom: 307px;
+    left:-1px;
+}
+#upArrow{
+    display: none;
+}
+#upArrow img{
+    width:60px;
+    bottom:20px;
+    right:20px;
+    position:fixed;
+    cursor:pointer;
+}
+
+
+
+
+.statistics li{
+    cursor: pointer;
+}
+
+
+/***          Stile Elementi Progresso         ***/
+.progress-circle-back {
+    fill: none; 
+    stroke: #E8E8E8;
+    stroke-width:10px;
+}
+.progress-circle {
+    transform: rotate(-90deg);
+}
+.progress-circle-prog {
+    fill: none; 
+    stroke-width: 10px;  
+    stroke-dasharray: 0 999;    
+    stroke-dashoffset: 0px;
+    transition: stroke-dasharray 1s linear 0s;
+}
+.progress-circle-prog.prog1 {
+    stroke: #efa8b0;
+}
+.progress-circle-prog.prog2 {
+    stroke: #a89cc8;
+}
+.progress-circle-prog.prog3 {
+    stroke: #8cc9f0;
+}
+.progress-text {
+    bottom: 128px;
+    font-size: 2em;
+    position: relative;
+    right: 15px;
+    text-align: center;
+    width: 100%;
+}
+@media screen and (max-width: 1680px) {
+    .progress-text {
+        bottom: 120px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .progress-text {
+        bottom: 113px;
+    }
+}
+@media screen and (max-width: 736px) {
+    .progress-text {
+        bottom: 110px;
+    }
+}
+/***          Footer         ***/
+footer textarea{
+    width: 100%;
+    min-height:115px;
+    resize:none;
+}
+.mailBoxm img{
+    position:relative;
+    top:6px;
+    height: 27.5px;
+}
