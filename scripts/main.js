@@ -78,14 +78,7 @@ $(document).ready(function () {
                 $("#upArrow").css("display", "block");
             else
                 $("#upArrow").css("display", "none");
-
-
-
-
-
-        
     });
-
 
 
     /***    Scrolltop sugli elementi del menu        ***/
@@ -105,7 +98,6 @@ $(document).ready(function () {
     
 //    if($(".showAdblockStatus").is(':visible')==false)
 //        alert("adblock attivo")
-
 
     /***    Protezione mail spamlist        ***/
 $(".mailBoxm img").css("display","none")
