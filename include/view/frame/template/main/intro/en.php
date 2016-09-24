@@ -2,7 +2,7 @@
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
-											<h2>About me...</h2>
+											<h2>Su di me...</h2>
 										</header>
 										<p>
                                                                                     My name is Mattteo Burbui, I was born in Figline Valdarno. At the moment I live in San Giovanni Valdarno.<br>
