@@ -5,9 +5,9 @@
 											<h2>Su di me...</h2>
 										</header>
 										<p>
-										    Mi chiamo Mattteo Burbui, sono nato a Figline Valdarno. Al momento vivo a San Giovanni Valdarno.<br>
-										    Ho frequentato il liceo socio-psico pedagogico, ma non era la strada, così durante il periodo scolastico ho studiato HTML, PHP e JavaScript.<br>
-										    Ho lavorato come tipografo e qui ho fatto alcuni piccoli programmi per l'azienda come calcolatrici personalizzati, diario di lavoro o altri programmi di utilità.<br>
+                                                                                    My name is Mattteo Burbui, I was born in Figline Valdarno. At the moment I live in San Giovanni Valdarno.<br>
+                                                                                    In high school I studied pedagogy, but it wasn't my way, so during the school time I studied HTML, PHP and JavaScript.<br>
+                                                                                    I worked as a typesetter and here I made some little programs for the company like custom calculators, work diary or utility.
 										</p>
 									</div>
 									<span class="image"><img src="/imgs/me.jpg" alt="Matteo Burbui" title="Matteo Burbui" /></span>
