@@ -4,10 +4,14 @@
 --
 -- Host: 127.0.0.1
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- Creato il: Set 24, 2016 alle 11:54
 =======
 -- Creato il: Set 19, 2016 alle 17:36
 >>>>>>> parent of 63d4bf6... minor update
+=======
+-- Creato il: Set 24, 2016 alle 11:41
+>>>>>>> parent of ede7881... minor update
 -- Versione del server: 5.7.11
 -- Versione PHP: 5.6.19
 
@@ -210,12 +214,16 @@ INSERT INTO `notices` (`ID`, `code`, `description`, `subject`, `functionality`, 
 (36, 'USE-F0007', 'Non è stato possibile caricare l\'utente in quanto non esiste', 'User', 'loadUser', 'it'),
 <<<<<<< HEAD
 (37, 'n_login_done', 'Login effettuato', '_login', 'notification', 'it'),
+<<<<<<< HEAD
 (38, 'n_mistake_name_or_password', 'Il nome utente o la password sono errati.', '_login', 'notification', 'it'),
 (39, 'n_no_username_or_password', 'Per favore inserire nome utente e password', '_login', 'notification', 'it');
 =======
 (37, 'n1', 'Login effettuato', '_login', 'notification', 'it'),
 (38, 'n2', 'Il nome utente o la password sono errati.', '_login', 'notification', 'it');
 >>>>>>> parent of 63d4bf6... minor update
+=======
+(38, 'n_mistake_name_or_password', 'Il nome utente o la password sono errati.', '_login', 'notification', 'it');
+>>>>>>> parent of ede7881... minor update
 
 -- --------------------------------------------------------
 
@@ -348,8 +356,7 @@ ALTER TABLE `logs_data`
 -- Indici per le tabelle `notices`
 --
 ALTER TABLE `notices`
-  ADD PRIMARY KEY (`ID`),
-  ADD UNIQUE KEY `code` (`code`,`lang`);
+  ADD PRIMARY KEY (`ID`);
 
 --
 -- Indici per le tabelle `orders`
@@ -415,7 +422,7 @@ ALTER TABLE `logs_data`
 -- AUTO_INCREMENT per la tabella `notices`
 --
 ALTER TABLE `notices`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 --
 -- AUTO_INCREMENT per la tabella `orders`
 --

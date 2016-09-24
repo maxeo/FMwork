@@ -18,9 +18,7 @@ if (!empty($_POST['name']) && !empty($_POST['password'])) {
         header("Location: " . Pageloader::b_pg());
     }
 } else {
-    $msg_log = Notification::showCode("n_no_username_or_password", Pageloader::getData("lang"), true);
-        $_SESSION['msg_log'] = $msg_log['description'];
-        header("Location: " . Pageloader::b_pg());
+    header("Location: " . Pageloader::b_pg() . "/errore/non è stato inserito il nome o la password.");
 }
 //todo: mettere l'errore correttamente
 ?>
