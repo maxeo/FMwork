@@ -11,6 +11,8 @@ Pageloader::addTag(' div id="wrapper"', NULL, 0, 1);
 Pageloader::ln();
 Pageloader::addElement("templateHeader");
 Pageloader::ln();
+Pageloader::addElement("templateNav");
+Pageloader::ln();
 Pageloader::addTag('     div id="main"', NULL, 0, 1);
 Pageloader::ln();
 Pageloader::addElement("templateSubsectionAboutMe");

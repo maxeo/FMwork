@@ -10,7 +10,7 @@
 										    Ho lavorato come tipografo e qui ho fatto alcuni piccoli programmi per l'azienda come calcolatrici personalizzati, diario di lavoro o altri programmi di utilità.<br>
 										</p>
 										<ul class="actions">
-											<li><a href="/it/su-di-me" class="button">Leggi Ancora</a></li>
+											<li><a href="<?php echo Pageloader::pageFromTarget("about-me", false,"it");  ?>" class="button">Leggi Ancora</a></li>
 										</ul>
 									</div>
 									<span class="image"><img src="/imgs/me.jpg" alt="Matteo Burbui" title="Matteo Burbui" /></span>
