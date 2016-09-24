@@ -178,7 +178,7 @@ class Pageloader {
                 self::include_clean($res['path']);
                 return true;
             }
-                return false; //todo: gestire errore
+            return false; //todo: gestire errore
         }
     }
 
