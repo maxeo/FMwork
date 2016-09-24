@@ -9,7 +9,7 @@ Pageloader::addTag("body", NULL, 0, 1);
 Pageloader::ln();
 Pageloader::addTag(' div id="wrapper"', NULL, 0, 1);
 Pageloader::ln();
-Pageloader::addElement("templateHeader");
+Pageloader::addElement("templateHeaderHome");
 Pageloader::ln();
 Pageloader::addElement("templateNav");
 Pageloader::ln();

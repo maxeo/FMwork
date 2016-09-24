@@ -1,29 +1,36 @@
 $(document).ready(function () {
 
     /***    Animazione Logo maxeo.it        ***/
-    function fadeLogo() {
+    function fadeLogo(tTr=4) {
         $(".fadelogo").css({
-            WebkitTransition: 'all 4s ease 0s',
-            MozTransition: 'all 4s ease 0s',
-            MsTransition: 'all 4s ease 0s',
-            OTransition: 'all 4s ease 0s',
-            transition: 'all 4s ease 0s',
+            WebkitTransition: 'all '+tTr+'s ease 0s',
+            MozTransition: 'all '+tTr+'s ease 0s',
+            MsTransition: 'all '+tTr+'s ease 0s',
+            OTransition: 'all '+tTr+'s ease 0s',
+            transition: 'all '+tTr+'s ease 0s',
             visibility: 'visible',
             opacity: 1
         });
     }
-
-    $(".fadelogo").css("opacity", 0);
-    if (window.screen.width > 620) {
-        $(".rollinglogo img").css("opacity", 1).css("transform", "rotate(900deg)");
+    if($(".logo").hasClass("animation")){
+        $(".fadelogo").css("opacity", 0);
+        if (window.screen.width > 620) {
+            $(".rollinglogo img").css("opacity", 1).css("transform", "rotate(900deg)");
+            setTimeout(function () {
+                fadeLogo()
+            }, 4000);
+        } else {
+            $(".rollinglogo img").css("display", "none")
+            setTimeout(function () {
+                fadeLogo()
+            }, 500);
+        }
+    }
+    else{
+        $(".fadelogo").css("opacity", 0);
         setTimeout(function () {
-            fadeLogo()
-        }, 4000);
-    } else {
-        $(".rollinglogo img").css("display", "none")
-        setTimeout(function () {
-            fadeLogo()
-        }, 500);
+                fadeLogo(6)
+            }, 500);
     }
 
     /***    Animazione percentuali        ***/
