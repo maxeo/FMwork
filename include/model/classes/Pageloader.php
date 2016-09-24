@@ -54,7 +54,7 @@ class Pageloader {
             $data['value'][] = "";
         }
 
-        
+
         self::$data = $data;
         self::$cnt = $cnt;
         return $data;
@@ -91,18 +91,16 @@ class Pageloader {
 
         $query = "SELECT * FROM `pages` WHERE `name` = :name AND `lang` = :lang";
         $res = $dbCon->selection($query, array(':name' => $page, ':lang' => $lang));
-        if (!empty($res)){
-            self::$data['target']=$res['terget_page'];
+        if (!empty($res)) {
+            self::$data['target'] = $res['terget_page'];
             return $res['path'];
-        }
-        else {
+        } else {
             $query = "SELECT path FROM `pages` WHERE `name` = :name AND `lang` = :lang";
             $res = $dbCon->selection($query, array(':name' => $page, ':lang' => "*"));
-            if (!empty($res)){
-                self::$data['target']=$res['terget_page'];
+            if (!empty($res)) {
+                self::$data['target'] = $res['terget_page'];
                 return $res['path'];
-            }
-            else
+            } else
                 return false;
         }
     }
@@ -124,10 +122,10 @@ class Pageloader {
         return implode("/", $page);
     }
 
-    public static function pageFromTarget($targetName, $path = false,$lang=NULL) {
+    public static function pageFromTarget($targetName, $path = false, $lang = NULL) {
         global $dbCon;
-        if($lang==NULL)
-            $lang=self::getData("lang");
+        if ($lang == NULL)
+            $lang = self::getData("lang");
         $query = "SELECT * FROM `pages` WHERE `terget_page` = :targetName AND `lang` = :lang";
         $res = $dbCon->selection($query, array(':targetName' => $targetName, ':lang' => $lang));
         if (!empty($res)) {
@@ -139,7 +137,7 @@ class Pageloader {
             return false;
     }
 
-    public static function includePageFromURL($file_to_include = NULL,$home="home") {
+    public static function includePageFromURL($file_to_include = NULL, $home = "home") {
         if (is_null($file_to_include))
             $file_to_include = self::path();
 
@@ -170,11 +168,17 @@ class Pageloader {
         $query = "SELECT * FROM `pages` WHERE `terget_page` = :targetName AND `lang` = :lang";
         $res = $dbCon->selection($query, array(':targetName' => $home, ':lang' => self::getData("lang")));
         if ($res) {
-            self::$data['target']=$home;
+            self::$data['target'] = $home;
             self::include_clean($res['path']);
             return true;
         } else {
-            return false; //todo: gestire errore
+            $res = $dbCon->selection($query, array(':targetName' => $home, ':lang' => "*"));
+            if ($res) {
+                self::$data['target'] = $home;
+                self::include_clean($res['path']);
+                return true;
+            }
+                return false; //todo: gestire errore
         }
     }
 
@@ -241,33 +245,32 @@ class Pageloader {
 
     public static function addTag($tagname, $data, $close = true, $open = true, $echo = true) {
         $txt = "";
-        $tab="";
-        $tabul=0;
+        $tab = "";
+        $tabul = 0;
 
-        
-        for($i=0,$stot=strlen($tagname);$i<$stot;$i++){
-            if($tagname[0]==' '){
+
+        for ($i = 0, $stot = strlen($tagname); $i < $stot; $i++) {
+            if ($tagname[0] == ' ') {
                 $tabul++;
-                $tagname=substr($tagname, 1);
-            }
-            else
+                $tagname = substr($tagname, 1);
+            } else
                 break;
         }
-        
-        for($i=0;$i<$tabul;$i++)
+
+        for ($i = 0; $i < $tabul; $i++)
             $tab.="\t";
-        
-        
+
+
         if ($open) {
-            $txt.=$tab."<" . $tagname . ">";
+            $txt.=$tab . "<" . $tagname . ">";
         }
-        
+
         $txt.=$data;
-        $tagname=trim($tagname);
+        $tagname = trim($tagname);
         if ($close) {
             $tagname = explode(" ", $tagname);
             $tagname = $tagname[0];
-            $txt.=$tab."</" . $tagname . ">";
+            $txt.=$tab . "</" . $tagname . ">";
         }
         if ($echo)
             echo $txt;
@@ -280,7 +283,7 @@ class Pageloader {
 
     public static function getData($type) {
         $data = self::$data;
-        if($type=='target')
+        if ($type == 'target')
             return $data[$type];
         elseif ($type !== 'lang' && $type !== 'page') {
             if (isset($data['name'])) {
