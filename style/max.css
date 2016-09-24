@@ -35,6 +35,15 @@
 }
 
 
+.content p{
+    text-align: justify;
+}
+
+.content p .image.maxPhoto{
+    float: right;
+    margin-left:20px !important;
+}
+
 /***          Stile Elementi Progresso         ***/
 .progress-circle-back {
     fill: none; 
