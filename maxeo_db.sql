@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Creato il: Set 24, 2016 alle 11:41
+-- Creato il: Set 24, 2016 alle 11:54
 -- Versione del server: 5.7.11
 -- Versione PHP: 5.6.19
 
@@ -187,7 +187,8 @@ INSERT INTO `notices` (`ID`, `code`, `description`, `subject`, `functionality`, 
 (35, 'USE-F0006', 'la mail è già stata attivata o la chiave di attivazione non è valida', 'User', 'activeUser', 'it'),
 (36, 'USE-F0007', 'Non è stato possibile caricare l\'utente in quanto non esiste', 'User', 'loadUser', 'it'),
 (37, 'n_login_done', 'Login effettuato', '_login', 'notification', 'it'),
-(38, 'n_mistake_name_or_password', 'Il nome utente o la password sono errati.', '_login', 'notification', 'it');
+(38, 'n_mistake_name_or_password', 'Il nome utente o la password sono errati.', '_login', 'notification', 'it'),
+(39, 'n_no_username_or_password', 'Per favore inserire nome utente e password', '_login', 'notification', 'it');
 
 -- --------------------------------------------------------
 
@@ -328,7 +329,8 @@ ALTER TABLE `logs_data`
 -- Indici per le tabelle `notices`
 --
 ALTER TABLE `notices`
-  ADD PRIMARY KEY (`ID`);
+  ADD PRIMARY KEY (`ID`),
+  ADD UNIQUE KEY `code` (`code`,`lang`);
 
 --
 -- Indici per le tabelle `orders`
@@ -394,7 +396,7 @@ ALTER TABLE `logs_data`
 -- AUTO_INCREMENT per la tabella `notices`
 --
 ALTER TABLE `notices`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 --
 -- AUTO_INCREMENT per la tabella `orders`
 --
