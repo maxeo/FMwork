@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Creato il: Set 24, 2016 alle 12:46
+-- Creato il: Set 24, 2016 alle 13:53
 -- Versione del server: 5.7.11
 -- Versione PHP: 5.6.19
 
@@ -235,14 +235,15 @@ CREATE TABLE `pages` (
 --
 
 INSERT INTO `pages` (`ID`, `name`, `type_page`, `path`, `terget_page`, `lang`) VALUES
-(1, '', 'view', 'include/view/home/index.php', 'home', '*'),
+(1, '', 'view', 'include/view/home/index.php', 'home', 'it'),
 (2, 'login/do', 'controller', 'include/controller/registrtion_and_login/login.php', NULL, '*'),
 (3, 'captcha.png', 'controller', 'include/controller/captcha.php', NULL, '*'),
-(4, 'su-di-me', 'view', 'include/view/subsection/about_me.php', 'about_me', 'it'),
+(4, 'su-di-me', 'view', 'include/view/subsection/about_me.php', 'about-me', 'it'),
 (5, 'registrazione/do', 'controller', 'include/controller/registrtion_and_login/registration.php', NULL, '*'),
 (6, 'logout', 'controller', 'include/controller/registrtion_and_login/logout.php', NULL, '*'),
 (8, 'server/upload_files', 'controller', 'include/controller/file_manager/manager.php', NULL, '*'),
-(7, 'about-me', 'view', 'include/view/subsection/about_me.php', 'about_me', 'en');
+(7, 'about-me', 'view', 'include/view/subsection/about_me.php', 'about-me', 'en'),
+(9, '', 'view', 'include/view/home/index.php', 'home', 'en');
 
 -- --------------------------------------------------------
 
@@ -263,7 +264,7 @@ CREATE TABLE `page_elements` (
 INSERT INTO `page_elements` (`ID`, `name`, `path`) VALUES
 (1, 'exemple', 'include/view/frame/exemple.html'),
 (6, 'templateFooter', 'include/view/frame/template/footer/'),
-(5, 'templateNav', 'include/view/frame/template/nav/'),
+(5, 'templateNavHome', 'include/view/frame/template/nav_home/'),
 (4, 'templateHeaderHome', 'include/view/frame/template/header_home.html'),
 (3, 'templateHead', 'include/view/frame/template/head.html'),
 (2, 'exemple2', 'include/view/frame/exemple2'),
@@ -272,7 +273,8 @@ INSERT INTO `page_elements` (`ID`, `name`, `path`) VALUES
 (9, 'templateMainSecond', 'include/view/frame/template/main/second/'),
 (10, 'templateMainSpecial', 'include/view/frame/template/main/special/'),
 (11, 'templateHeader', 'include/view/frame/template/header.html'),
-(12, 'templateSubsectionAboutMe', 'include/view/frame/template/subsection/about-me/');
+(12, 'templateSubsectionAboutMe', 'include/view/frame/template/subsection/about-me/'),
+(13, 'templateNav', 'include/view/frame/template/nav/');
 
 -- --------------------------------------------------------
 
@@ -418,7 +420,7 @@ ALTER TABLE `pages`
 -- AUTO_INCREMENT per la tabella `page_elements`
 --
 ALTER TABLE `page_elements`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT per la tabella `users`
 --
