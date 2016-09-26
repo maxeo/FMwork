@@ -47,7 +47,7 @@
 								</ul>
 								<footer class="major">
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Leggi Ancora</a></li>
+										<li><a href="<?php echo Pageloader::pageFromTarget("skills", false,"it");  ?>" class="button">Leggi Ancora</a></li>
 									</ul>
 								</footer>
 							</section>
