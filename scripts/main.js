@@ -51,12 +51,15 @@ $(document).ready(function () {
         $('.progress-text').data('progress', percent);
     }
     var navHeight = parseInt($("#nav").css("height"));
+    var perc_are_loaded=0;
     $(document).bind("scroll", function () {
-        if (isScrolledIntoView(".progress-circle-prog")) {
+        if (isScrolledIntoView(".progress-circle-prog") && perc_are_loaded==0) {
+            perc_are_loaded=1;
             setTimeout(function () {
-                updatePercent($(('.progress-circle-prog.prog1')), 85);
-                updatePercent($(('.progress-circle-prog.prog2')), 70);
-                updatePercent($(('.progress-circle-prog.prog3')), 75);
+                $('.progress-circle-prog').each(function(){
+                    $(this).css("stroke","#"+$(this).attr("data-color"));
+                    updatePercent($(this), $(this).attr("data-perc"));
+                })
             }, 500);
         }
 
