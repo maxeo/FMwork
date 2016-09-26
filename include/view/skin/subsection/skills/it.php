@@ -1,6 +1,6 @@
-							<section id="skills" class="main special">
+							<section id="competenze" class="main special">
 								<header class="major">
-									<h2>Skills</h2>
+									<h2>Competenze</h2>
 								</header>
 								<ul class="features">
 									<li>
@@ -14,7 +14,7 @@
                                                                                           <div class="progress-text" data-progress="0">85%</div>
                                                                                 </div>	
 										<h3>PHP</h3>
-										<p>It is the programming language I know best, I focused on the relationship with the objects, I made the framework used to made this website in PHP.</p>
+										<p>È il linguaggio di programmazione che conosco meglio, approfondito il rapporto con gli oggetti, il framework con cui è fatto questo sito l'ho realizzato in PHP.</p>
 									</li>
                                                                         <li>
 										<div class="progress">
@@ -27,7 +27,7 @@
                                                                                           <div class="progress-text" data-progress="0">70%</div>
                                                                                 </div>	
 										<h3>CSS3</h3>
-                                                                                <p>Although this is far from a programming language <i>(at least not at the level of the other languages)</i> it is a particularly useful language in the web area, both as the style of the web pages and to create the best effects in terms of speed and resources. </p>
+                                                                                <p>Anche se questo è tutt'altro che un linguaggio di programmazione <i>(almeno non a livello degli altri linguaggi)</i> è un linguaggio particolarmente utile in ambito web, sia per quanto riguarda lo stile delle pagine web, sia per creare effetti migliori in termini di velocità e risorse.</p>
                                                                                 
 									</li>
                                                                         <li>
@@ -41,13 +41,13 @@
                                                                                           <div class="progress-text" data-progress="0">75%</div>
                                                                                 </div>	
 										<h3>Javascript & JQuery</h3>
-										<p>This is another language I well depth; particularly when linked to the JQuery library; most of this page script are realized with this language.</p>
+										<p>Un altro linguaggio che ho ben approfondito è il Javascript, in particolar modo se legato alla libreria JQuery; la maggior parte degli script di questa pagina sono realizzati con questo linguaggio.</p>
 									</li>
                                                                         
 								</ul>
 								<footer class="major">
 									<ul class="actions">
-										<li><a href="<?php echo Pageloader::pageFromTarget("skills", false,"en");  ?>" class="button">Read More</a></li>
+										<li><a href="<?php echo Pageloader::pageFromTarget("skills", false,"it");  ?>" class="button">Leggi Ancora</a></li>
 									</ul>
 								</footer>
 							</section>

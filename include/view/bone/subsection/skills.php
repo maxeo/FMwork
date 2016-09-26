@@ -15,7 +15,7 @@ Pageloader::addElement("tNav");
 Pageloader::ln();
 Pageloader::addTag('     div id="main"', NULL, 0, 1);
 Pageloader::ln();
-Pageloader::addElement("tsAbout-me");
+Pageloader::addElement("tsSkills");
 Pageloader::ln();
 Pageloader::addTag('     div', NULL, 1, 0);
 Pageloader::ln();

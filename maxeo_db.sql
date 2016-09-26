@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Set 26, 2016 alle 11:27
+-- Creato il: Set 26, 2016 alle 22:20
 -- Versione del server: 5.7.11
 -- Versione PHP: 5.6.19
 
@@ -105,7 +105,7 @@ CREATE TABLE `connections` (
 --
 
 INSERT INTO `connections` (`ID`, `IDuser`, `keyConnection`, `clientIP`, `first_connection`, `lang`, `browser_info`, `time_connection`, `captcha_key`) VALUES
-(1, 0, 'HWhHwrD8rfqNoeNAEJpCInNNT310Fs13l22HeThNfY9Wg6cbBnI8KjLYAxGcRx41', '127.0.0.1', 'fmwork', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-09-26 11:26:29', '');
+(1, 0, 'y3ZqvqGwkHBJKbF8P6jb7XjTNnX7TGt6DWqI4bInMqP9XIeIOxUmC02diQ1AzHlX', '127.0.0.1', 'fmwork', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-09-26 22:19:32', '');
 
 -- --------------------------------------------------------
 
@@ -235,15 +235,19 @@ CREATE TABLE `pages` (
 --
 
 INSERT INTO `pages` (`ID`, `name`, `type_page`, `path`, `terget_page`, `lang`) VALUES
-(1, '', 'view', 'include/view/bone/home/index.php', 'home', 'it'),
+(6, '', 'view', 'include/view/bone/home/index.php', 'home', 'it'),
 (2, 'login/do', 'controller', 'include/controller/registrtion_and_login/login.php', NULL, '*'),
 (3, 'captcha.png', 'controller', 'include/controller/captcha.php', NULL, '*'),
-(4, 'su-di-me', 'view', 'include/view/bone/subsection/about_me.php', 'about-me', 'it'),
-(5, 'registrazione/do', 'controller', 'include/controller/registrtion_and_login/registration.php', NULL, '*'),
-(6, 'logout', 'controller', 'include/controller/registrtion_and_login/logout.php', NULL, '*'),
-(8, 'server/upload_files', 'controller', 'include/controller/file_manager/manager.php', NULL, '*'),
-(7, 'about-me', 'view', 'include/view/bone/subsection/about_me.php', 'about-me', 'en'),
-(9, '', 'view', 'include/view/bone/home/index.php', 'home', 'en');
+(8, 'su-di-me', 'view', 'include/view/bone/subsection/about_me.php', 'about-me', 'it'),
+(1, 'registrazione/do', 'controller', 'include/controller/registrtion_and_login/registration.php', NULL, '*'),
+(4, 'logout', 'controller', 'include/controller/registrtion_and_login/logout.php', NULL, '*'),
+(5, 'server/upload_files', 'controller', 'include/controller/file_manager/manager.php', NULL, '*'),
+(9, 'about-me', 'view', 'include/view/bone/subsection/about_me.php', 'about-me', 'en'),
+(7, '', 'view', 'include/view/bone/home/index.php', 'home', 'en'),
+(10, 'skills', 'view', 'include/view/bone/subsection/skills.php', 'skills', 'en'),
+(11, 'competenze', 'view', 'include/view/bone/subsection/skills.php', 'skills', 'it'),
+(12, 'lavori-svolti', 'view', 'include/view/bone/subsection/worksdone.php', 'worksdone', 'it'),
+(13, 'works-done', 'view', 'include/view/bone/subsection/worksdone.php', 'worksdone', 'en');
 
 -- --------------------------------------------------------
 
@@ -262,17 +266,18 @@ CREATE TABLE `page_elements` (
 --
 
 INSERT INTO `page_elements` (`ID`, `name`, `path`) VALUES
-(6, 'templateFooter', 'footer/'),
-(5, 'templateNavHome', 'nav_home/'),
-(4, 'templateHeaderHome', 'header_home.html'),
-(3, 'templateHead', 'head.html'),
-(7, 'templateMainIntro', 'main/intro/'),
-(8, 'templateMainFirst', 'main/first/'),
-(9, 'templateMainSecond', 'main/second/'),
-(10, 'templateMainSpecial', 'main/special/'),
-(11, 'templateHeader', 'header.html'),
-(12, 'templateSubsectionAboutMe', 'subsection/about-me/'),
-(13, 'templateNav', 'nav/');
+(6, 'tFooter', 'footer/'),
+(4, 'tNavHome', 'nav_home/'),
+(2, 'tHeaderHome', 'header_home.html'),
+(1, 'tHead', 'head.html'),
+(7, 'tAbout-me', 'main/about-me/'),
+(8, 'tMainSkills', 'main/skills/'),
+(9, 'tMainWorksdone', 'main/worksdone/'),
+(5, 'tHeader', 'header.html'),
+(10, 'tsAbout-me', 'subsection/about-me/'),
+(3, 'tNav', 'nav/'),
+(12, 'tsWorksdone', 'subsection/worksdone/'),
+(11, 'tsSkills', 'subsection/skills/');
 
 -- --------------------------------------------------------
 
@@ -349,7 +354,8 @@ ALTER TABLE `orders`
 -- Indici per le tabelle `pages`
 --
 ALTER TABLE `pages`
-  ADD PRIMARY KEY (`ID`);
+  ADD PRIMARY KEY (`ID`),
+  ADD UNIQUE KEY `terget_page` (`terget_page`,`lang`) USING BTREE;
 
 --
 -- Indici per le tabelle `page_elements`
@@ -413,12 +419,12 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT per la tabella `pages`
 --
 ALTER TABLE `pages`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT per la tabella `page_elements`
 --
 ALTER TABLE `page_elements`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT per la tabella `users`
 --

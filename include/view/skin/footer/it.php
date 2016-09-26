@@ -23,7 +23,8 @@
 							</dl>
 							<ul class="icons">
                                                             <li><a href="https://fb.com/maxeo90" class="icon fa-facebook alt"><span class="label">Facebook</span></a></li>
-                                                            <li><a href="https://twitter.com/@maxeo90" class="icon fa-twitter alt"><span class="label">Twitter</span></a></li>
+                                                            <li><a href="https://twitter.com/maxeo90" class="icon fa-twitter alt"><span class="label">Twitter</span></a></li>
+                                                            <li><a href="https://github.com/maxeo" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
 							</ul>
 						</section>
 						<p class="copyright">&copy; Maxeo.it. Design: <a href="https://html5up.net">HTML5 UP</a> Animation: <a href="http://maxeo.it">Maxeo</a>.</p>
