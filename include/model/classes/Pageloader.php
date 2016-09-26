@@ -219,7 +219,7 @@ class Pageloader {
     }
 
     public static function addElement($elementName, $lang = NULL) {
-        global $dbCon;
+        global $dbCon, $settings;
         if (is_null($lang))
             $lang = self::getData("lang");
 
@@ -228,7 +228,7 @@ class Pageloader {
 
         if (self::correctLanguage() && $res['path']) {
 
-            $newLocation = $res['path'];
+            $newLocation = $settings['base_path_page_elements'].$res['path'];
             if (file_exists(DOCUMENT_ROOT . $newLocation) && is_file(DOCUMENT_ROOT . $newLocation))
                 require_once(DOCUMENT_ROOT . $newLocation);
             else {

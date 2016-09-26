@@ -1,9 +1,9 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.5.1
--- http://www.phpmyadmin.net
+-- version 4.6.4
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Set 24, 2016 alle 13:53
+-- Creato il: Set 26, 2016 alle 11:27
 -- Versione del server: 5.7.11
 -- Versione PHP: 5.6.19
 
@@ -105,7 +105,7 @@ CREATE TABLE `connections` (
 --
 
 INSERT INTO `connections` (`ID`, `IDuser`, `keyConnection`, `clientIP`, `first_connection`, `lang`, `browser_info`, `time_connection`, `captcha_key`) VALUES
-(1, 0, 'WJXMtoZ9TJqhRmn32SL9fuDRikjjIKvuZlJRbj6UGvLWJroQcO6wginHOqYS73Pv', '127.0.0.1', 'maxeo', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-09-24 12:07:25', '');
+(1, 0, 'HWhHwrD8rfqNoeNAEJpCInNNT310Fs13l22HeThNfY9Wg6cbBnI8KjLYAxGcRx41', '127.0.0.1', 'fmwork', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-09-26 11:26:29', '');
 
 -- --------------------------------------------------------
 
@@ -235,15 +235,15 @@ CREATE TABLE `pages` (
 --
 
 INSERT INTO `pages` (`ID`, `name`, `type_page`, `path`, `terget_page`, `lang`) VALUES
-(1, '', 'view', 'include/view/home/index.php', 'home', 'it'),
+(1, '', 'view', 'include/view/bone/home/index.php', 'home', 'it'),
 (2, 'login/do', 'controller', 'include/controller/registrtion_and_login/login.php', NULL, '*'),
 (3, 'captcha.png', 'controller', 'include/controller/captcha.php', NULL, '*'),
-(4, 'su-di-me', 'view', 'include/view/subsection/about_me.php', 'about-me', 'it'),
+(4, 'su-di-me', 'view', 'include/view/bone/subsection/about_me.php', 'about-me', 'it'),
 (5, 'registrazione/do', 'controller', 'include/controller/registrtion_and_login/registration.php', NULL, '*'),
 (6, 'logout', 'controller', 'include/controller/registrtion_and_login/logout.php', NULL, '*'),
 (8, 'server/upload_files', 'controller', 'include/controller/file_manager/manager.php', NULL, '*'),
-(7, 'about-me', 'view', 'include/view/subsection/about_me.php', 'about-me', 'en'),
-(9, '', 'view', 'include/view/home/index.php', 'home', 'en');
+(7, 'about-me', 'view', 'include/view/bone/subsection/about_me.php', 'about-me', 'en'),
+(9, '', 'view', 'include/view/bone/home/index.php', 'home', 'en');
 
 -- --------------------------------------------------------
 
@@ -262,19 +262,17 @@ CREATE TABLE `page_elements` (
 --
 
 INSERT INTO `page_elements` (`ID`, `name`, `path`) VALUES
-(1, 'exemple', 'include/view/frame/exemple.html'),
-(6, 'templateFooter', 'include/view/frame/template/footer/'),
-(5, 'templateNavHome', 'include/view/frame/template/nav_home/'),
-(4, 'templateHeaderHome', 'include/view/frame/template/header_home.html'),
-(3, 'templateHead', 'include/view/frame/template/head.html'),
-(2, 'exemple2', 'include/view/frame/exemple2'),
-(7, 'templateMainIntro', 'include/view/frame/template/main/intro/'),
-(8, 'templateMainFirst', 'include/view/frame/template/main/first/'),
-(9, 'templateMainSecond', 'include/view/frame/template/main/second/'),
-(10, 'templateMainSpecial', 'include/view/frame/template/main/special/'),
-(11, 'templateHeader', 'include/view/frame/template/header.html'),
-(12, 'templateSubsectionAboutMe', 'include/view/frame/template/subsection/about-me/'),
-(13, 'templateNav', 'include/view/frame/template/nav/');
+(6, 'templateFooter', 'footer/'),
+(5, 'templateNavHome', 'nav_home/'),
+(4, 'templateHeaderHome', 'header_home.html'),
+(3, 'templateHead', 'head.html'),
+(7, 'templateMainIntro', 'main/intro/'),
+(8, 'templateMainFirst', 'main/first/'),
+(9, 'templateMainSecond', 'main/second/'),
+(10, 'templateMainSpecial', 'main/special/'),
+(11, 'templateHeader', 'header.html'),
+(12, 'templateSubsectionAboutMe', 'subsection/about-me/'),
+(13, 'templateNav', 'nav/');
 
 -- --------------------------------------------------------
 

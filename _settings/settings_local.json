@@ -16,6 +16,7 @@
 "languages":["it","en","fr","de","es"],
 "location_message_path":{"it":"avviso","en":"notice"},
 "page_settings":"pages.json",
+"base_path_page_elements":".\/include\/view\/skin\/",
 "maxConnectionsByIP":30,
 "maxItemsInCart":30,
 "maxRegBeforeCaptcha":3,
