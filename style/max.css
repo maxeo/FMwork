@@ -33,6 +33,9 @@
 .statistics li a {
     border-bottom: none;
 }
+.no_margin_bot{
+    margin-bottom: 0;
+}
 
 .content p{
     text-align: justify;

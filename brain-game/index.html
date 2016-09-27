@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>BrainGame</title>
+        <meta id="view" name = "viewport" content = "width = device-width" />
+<meta  name = "viewport" content = "initial-scale = 1.0, user-scalable=yes, maximum-scale = 1" /> 
+		<script src="jquery-1.9.1.js"></script>
+		<script>
+		//setto le variabili pubbliche
+			var operazioni=new Array('+','x','-','/');
+			var risultato="";
+			var started=0;
+			var conInter;
+			var livello;
+			var timeModeI=0;
+			
+		function start(){
+			//funzione di inizio
+			started=1;
+			livello=$("#livello").val()*1;
+			$("#timeRes").html($("#tempoGioco").val());
+			
+			if($("#tempoGioco").val()=="TimeMode"){
+				$("#timeRes").html(20);
+				timeModeI=livello;
+			}
+			conInter=self.setInterval("scalaTempo()" ,1000);
+			startGame()
+		}
+		
+		function scalaTempo(){
+			//la funzione diminuisce il tempo in timeRes
+			$("#timeRes").html(($("#timeRes").html()*1)-1);
+			if($("#timeRes").html()*1<=0)
+				gameOver();
+		}
+		function gameOver(){
+			//chiude la partita, resetta i valori e gli stili iniziali,
+			//comunica all'utente il punteggio ottenuto
+			started=0;
+			clearInterval(conInter);
+			$("#formRisp").css("display", "none");
+			$("#stats").css("display", "none");
+			$("#showOp").css("display", "none");
+			$("#settings").css("display", "block");
+			$("#startButton").css("display", "block");
+			
+			
+			percentualeOk=Math.floor(10000*$("#rV").html()/$("#rT").html())/100
+			
+			Punteggio=Math.floor(Math.pow(2, livello)*$("#rV").html()-Math.pow(2, livello)*$("#rE").html()/2)
+			
+			if(timeModeI==0)
+				Punteggio=Math.floor(Punteggio*60/$("#tempoGioco").val())
+			else
+				timeModeI=0;
+			alert("Fine del gioco!\nPercentuale risposte corrette: "
+			+percentualeOk+"%("+$("#rV").html()+"/"+$("#rT").html()+")\n"
+			+"Punteggio ottenuto: "+Punteggio)
+			$("#rT").html(0);
+			$("#rV").html(0);
+			$("#rE").html(0);
+			
+		}
+		function startGame() {
+			if (started){
+				$("#risp").val("");
+				$("#formRisp").css("display", "block")
+				nOp=Math.floor((Math.random()*4));
+				if (operazioni[nOp]=='x') {
+					switch (livello) {
+						case 1:
+						numero1=Math.floor(Math.random()*5);
+						numero2=Math.floor(Math.random()*5);
+						break;
+						
+						case 2:
+						numero1=Math.floor(Math.random()*10);
+						numero2=Math.floor(Math.random()*10);
+						break;
+						
+						case 3:
+						numero1=Math.floor(Math.random()*100);
+						numero2=Math.floor(Math.random()*10);
+						break;
+						
+						case 4:
+						numero1=Math.floor(Math.random()*100);
+						numero2=Math.floor(Math.random()*100);
+						break;
+						
+						case 5:
+						numero1=Math.floor(Math.random()*100)+70;
+						numero2=Math.floor(Math.random()*100)+70;
+						break;
+						
+					}
+					risultato=numero1*numero2;
+					conto=numero1+"x"+numero2+"=?";
+				}
+				else
+				if(operazioni[nOp]=='+'){
+					switch (livello) {
+						case 1:
+						numero1=Math.floor(Math.random()*10);
+						numero2=Math.floor(Math.random()*10);
+						break;
+						
+						case 2:
+						numero1=Math.floor(Math.random()*20);
+						numero2=Math.floor(Math.random()*20);
+						break;
+						
+						case 3:
+						numero1=Math.floor(Math.random()*100);
+						numero2=Math.floor(Math.random()*100);
+						break;
+						
+						case 4:
+						numero1=Math.floor(Math.random()*1000);
+						numero2=Math.floor(Math.random()*1000);
+						break;
+						
+						case 5:
+						numero1=Math.floor(Math.random()*999999)+100;
+						numero2=Math.floor(Math.random()*999999)+100;
+						break;
+						
+					}
+					risultato=numero1+numero2;
+					conto=numero1+"+"+numero2+"=?";
+					
+				}
+				else
+				if (operazioni[nOp]=='-') {
+					switch (livello) {
+						case 1:
+						numero1=Math.floor(Math.random()*10);
+						numero2=Math.floor(Math.random()*10);
+						break;
+						
+						case 2:
+						numero1=Math.floor(Math.random()*20);
+						numero2=Math.floor(Math.random()*20);
+						break;
+						
+						case 3:
+						numero1=Math.floor(Math.random()*100);
+						numero2=Math.floor(Math.random()*100);
+						break;
+						
+						case 4:
+						numero1=Math.floor(Math.random()*1000);
+						numero2=Math.floor(Math.random()*1000);
+						break;
+						
+						case 5:
+						numero1=Math.floor(Math.random()*999999)+100;
+						numero2=Math.floor(Math.random()*999999)+100;
+						break;
+						
+					}
+					if (numero2>numero1) {
+						n3=numero1;
+						numero1=numero2;
+						numero2=n3;
+					}
+					risultato=numero1-numero2;
+					conto=numero1+"-"+numero2+"=?";
+				}
+				else  
+				if (operazioni[nOp]=='/') {
+					switch (livello) {
+						case 1:
+						numero1=Math.floor(Math.random()*6);
+						numero2=Math.floor(Math.random()*6);
+						break;
+						
+						case 2:
+						numero1=Math.floor(Math.random()*10);
+						numero2=Math.floor(Math.random()*10);
+						break;
+						
+						case 3:
+						numero1=Math.floor(Math.random()*100);
+						numero2=Math.floor(Math.random()*10);
+						break;
+						
+						case 4:
+						numero1=Math.floor(Math.random()*100);
+						numero2=Math.floor(Math.random()*50);
+						break;
+						
+						case 5:
+						numero1=Math.floor(Math.random()*100)+70;
+						numero2=Math.floor(Math.random()*50)+70;
+						break;
+						
+					}
+					numero1++;
+					numero2++;
+					
+					n3=numero1*numero2;
+					
+					risultato=numero2;
+					conto=n3+"/"+numero1+"=?";
+				}
+				
+				
+				$("#showOp").css("display","block");
+				$("#stats").css("display","block");
+				$("#showOp").html(conto)
+				$("#formRisp").css("display", "none")
+				$("#settings").css("display", "none")
+				$("#formRisp").css("display", "block")
+				$("#startButton").css("display", "none")
+				$("#risp").focus();
+			}
+			
+			//$("#risp").val(risultato)
+			
+		}
+		
+		function risposta() {
+			if(started){
+				rispTotali=($("#rT").html()*1)+1;
+				rispEsatte=($("#rV").html()*1)+1;
+				rispErrate=($("#rE").html()*1)+1;
+				
+				
+				$("#rT").html(rispTotali);
+				
+				if($("#risp").val()==risultato){
+					$("#rV").html(rispEsatte);
+					alert("Risposta esatta!")
+					$("#timeRes").html(($("#timeRes").html()*1)+timeModeI)
+					
+				}
+				else {
+					$("#rE").html(rispErrate);
+					alert("Sbagliato! La risposta corretta era "+ risultato)
+				}
+				$("#risp").focus();
+				startGame();
+			}
+		}
+		
+		</script>
+		<style>
+		#showOp{
+			font-family: Arial, Helvetica;
+			font-size: 40pt;
+			display:none;
+		}
+		
+		#stats{
+			font-family: Arial, Helvetica;
+			font-size: 16pt;
+			display:none;
+			margin-top: 10px;
+			border: 1px solid #000;
+			
+		}
+		#formRisp{
+			display:none;
+		}
+		</style>
+	</head>
+	<body>
+	<center>
+		<div id="showOp"></div>
+		<div id="settings">
+            Livello:<select id="livello">
+                    <option value="1">Molto Facile</option>
+                    <option value="2">Facile</option>
+                    <option selected="selected" value="3">Medio</option>
+                    <option value="4">Difficile</option>
+                    <option value="5">Molto difficile</option>
+                </select>
+            Tempo: <select id="tempoGioco">
+             		<option value="TimeMode">Time Mode</option>
+                    <option selected="selected" value="60">60 sec</option>
+                    <option value="90">90 sec</option>
+                    <option value="120">120 sec</option>
+                    <option value="180">180 sec</option>
+                    <option value="300">5 min</option>
+                </select>
+          
+          </div>
+            <input type="button" onclick="start()" id="startButton" value="Inizia" />
+            
+            <form id="formRisp" onsubmit=" risposta();return false;" >
+                <input type="Tel" name="risp" id="risp" />
+                <input type="submit" id="conf" onclick='' value="Conferma" />
+            </form>
+        
+		<div id="stats">
+        Tempo Resuduo:<span id="timeRes">5</span><br/>
+		Risposte totali:<span id="rT">0</span><br/>
+		Risposte esatte:<span id="rV">0</span><br/>
+		Risposte errate:<span id="rE">0</span><br/>
+		</div>
+	</center>
+	</body>
+</html>
