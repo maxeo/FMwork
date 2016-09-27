@@ -50,7 +50,7 @@ $(document).ready(function () {
         }
     }
     function updatePercent(selector, percent) {
-        selector.get(0).style.strokeDasharray = (percent * 4.65) + ' 999';
+        selector.get(0).style.strokeDasharray = (percent * 4.65) + ' 1000';
     }
     var navHeight = parseInt($("#nav").css("height"));
     var perc_are_loaded = 0;

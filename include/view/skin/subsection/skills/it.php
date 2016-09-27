@@ -35,7 +35,7 @@
                                                                                           <div class="progress-text" data-progress="0">75%</div>
                                                                                 </div>	
 										<h3>Javascript & JQuery</h3>
-										<p>Un altro linguaggio che ho ben approfondito è il Javascript, in particolar modo se legato alla libreria JQuery; la maggior parte degli script di questa pagina sono realizzati con questo linguaggio.</p>
+										<p>Un altro linguaggio che ho ben approfondito è il Javascript, in particolar modo se legato alla libreria JQuery; gli script di questa pagina li ho realizzati con questo linguaggio.</p>
 									</li>
                                                                         <li>
 										<div class="progress">
@@ -86,9 +86,9 @@
 										<div class="progress">
                                                                                     <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
                                                                                         <circle class="progress-circle-back" cx="80" cy="80" r="74"></circle>
-                                                                                        <circle class="progress-circle-prog" data-perc="60" data-color="FA6BFF" cx="80" cy="80" r="74"></circle>
+                                                                                        <circle class="progress-circle-prog" data-perc="70" data-color="FA6BFF" cx="80" cy="80" r="74"></circle>
                                                                                     </svg>
-                                                                                          <div class="progress-text" data-progress="0">60%</div>
+                                                                                          <div class="progress-text" data-progress="0">70%</div>
                                                                                 </div>	
 										<h3>Suite Adobe</h3>
                                                                                 <p>Da Photoshop a Illustrator passando per Dreamweaver. Ottimi strumenti grafici, mentre per la programmazione prediligo <a href="https://netbeans.org/"><b>NetBeans</b></a> dell'Oracle</p>
@@ -100,7 +100,7 @@
                                                                                         <circle class="progress-circle-back" cx="80" cy="80" r="74"></circle>
                                                                                         <circle class="progress-circle-prog" data-perc="65"data-color="5257FF" cx="80" cy="80" r="74"></circle>
                                                                                     </svg>
-                                                                                          <div class="progress-text" data-progress="0">65%</div>
+                                                                                          <div class="progress-text" data-progress="0">70%</div>
                                                                                 </div>	
 										<h3>Lingua Inglese</h3>
 										<p>Linguaggio della rete, fondamentale per programmare qunto relazionarsi con il resto del mondo.</p>

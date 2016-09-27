@@ -6,7 +6,7 @@ require_once("actions.php");
 $pageLoaded = Pageloader::includePageFromURL();
 
 if (!$pageLoaded) {
-    include(DOCUMENT_ROOT . "include/view/other/template/E_404.htm");
+    include(DOCUMENT_ROOT . "include/view/bone/other/E_404.htm");
 }
 //$time_end = microtime(true);
 //$execution_time = ($time_end - $time_start);

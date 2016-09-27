@@ -35,7 +35,7 @@
                                                                                           <div class="progress-text" data-progress="0">75%</div>
                                                                                 </div>	
 										<h3>Javascript & JQuery</h3>
-										<p>Un altro linguaggio che ho ben approfondito è il Javascript, in particolar modo se legato alla libreria JQuery; la maggior parte degli script di questa pagina sono realizzati con questo linguaggio.</p>
+										<p>Un altro linguaggio che ho ben approfondito è il Javascript, in particolar modo se legato alla libreria JQuery; gli script di questa pagina li ho realizzati con questo linguaggio.</p>
 									</li>
                                                                         
 								</ul>

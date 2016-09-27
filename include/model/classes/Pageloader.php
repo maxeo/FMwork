@@ -18,7 +18,8 @@ class Pageloader {
         global $settings;
         self::$pageSettings['languages'] = $settings['languages'];
         self::$pageSettings['location_message_path'] = $settings['location_message_path'];
-        $requestsUrl = explode("/", $_SERVER['REQUEST_URI']);
+        $requestsUrl = explode("?", $_SERVER['REQUEST_URI'])[0];    //Rimuovo richieste in get
+        $requestsUrl = explode("/", $requestsUrl);
         $cnt = 1;
 
         if (empty($requestsUrl[1])) {
@@ -27,7 +28,7 @@ class Pageloader {
                 $data['lang'] = "it";
         }
         else {
-            if (strpos($requestsUrl[1], 'index') === false && strpos($requestsUrl[1], '?') === false) {
+            if (strpos($requestsUrl[1], 'index') === false) {
                 $data['lang'] = $requestsUrl[1];
             } else
                 $data['lang'] = "it";
@@ -156,7 +157,8 @@ class Pageloader {
             self::include_clean($new_file_to_include);
             return true;
         } else {
-            if ((!self::getData('page') || self::getData('page') == "?XDEBUG_SESSION_START=netbeans-xdebug")) {
+            
+            if (!self::getData('page')) {
                 return self::includeHome($home);
             } else
                 return false;
@@ -283,8 +285,9 @@ class Pageloader {
 
     public static function getData($type) {
         $data = self::$data;
-        if ($type == 'target')
+        if ($type === 'target'){
             return $data[$type];
+        }
         elseif ($type !== 'lang' && $type !== 'page') {
             if (isset($data['name'])) {
                 if (is_int($type) && $type < count($data['name']) + count(@$data['value'])) {

@@ -30,10 +30,9 @@
 
 
 
-.statistics li{
-    cursor: pointer;
+.statistics li a {
+    border-bottom: none;
 }
-
 
 .content p{
     text-align: justify;
@@ -56,9 +55,9 @@
 .progress-circle-prog {
     fill: none; 
     stroke-width: 10px;  
-    stroke-dasharray: 0 999;    
+    stroke-dasharray: 0 1000;    
     stroke-dashoffset: 0px;
-    transition: stroke-dasharray 1s linear 0s;
+    transition: stroke-dasharray 1.5s linear 0s;
 }
 
 .progress-text {
