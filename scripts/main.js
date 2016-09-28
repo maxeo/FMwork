@@ -64,6 +64,7 @@ $(document).ready(function () {
                 })
             }, 500);
         }
+        /***    Scorrimento in alto per cellulari        ***/
 
         if ($(document).scrollTop() > $(".main").offset().top - navHeight) {
             $("#nav").css({
@@ -88,7 +89,7 @@ $(document).ready(function () {
     /***    Scrolltop sugli elementi del menu        ***/
 
 
-    $(".nav_section").click(function () {
+    $(".nav_section, .to_target").click(function () {
         elem = $("#" + $(this).attr("href").substr(1));
         $("html, body").animate({scrollTop: elem.offset().top + "px"},
                 500);

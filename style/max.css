@@ -26,11 +26,18 @@
     position:fixed;
     cursor:pointer;
 }
+.titleProj{
+    font-weight: bold;
+    font-size: 24px;
+    color: #333399;
+}
 
 
+.justify{
+    text-align: justify;
+}
 
-
-.statistics li a {
+.statistics li a, .no_borderB {
     border-bottom: none;
 }
 .no_margin_bot{
@@ -45,7 +52,9 @@
     float: right;
     margin-left:20px !important;
 }
-
+ul.statistics li strong{
+        font-size: 40px;
+    }
 /***          Stile Elementi Progresso         ***/
 .progress-circle-back {
     fill: none; 
@@ -75,16 +84,33 @@
     .progress-text {
         bottom: 120px;
     }
+    ul.statistics li strong{
+        font-size: 32px;
+    }
 }
 @media screen and (max-width: 1280px) {
     .progress-text {
         bottom: 113px;
+    }
+    ul.statistics li strong{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .progress-text {
+        bottom: 113px;
+    }
+    ul.statistics li strong{
+        font-size: 14px;
     }
 }
 @media screen and (max-width: 736px) {
     .progress-text {
         bottom: 110px;
     }
+    .statistics li.style6 {
+                    background-color: #8CF0D4;
+                }
 }
 /***          Footer         ***/
 footer textarea{
