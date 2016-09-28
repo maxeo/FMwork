@@ -53,8 +53,8 @@
     margin-left:20px !important;
 }
 ul.statistics li strong{
-        font-size: 40px;
-    }
+    font-size: 40px;
+}
 /***          Stile Elementi Progresso         ***/
 .progress-circle-back {
     fill: none; 
@@ -109,8 +109,11 @@ ul.statistics li strong{
         bottom: 110px;
     }
     .statistics li.style6 {
-                    background-color: #8CF0D4;
-                }
+        background-color: #8CF0D4;
+    }
+    ul.statistics li strong{
+        font-size: 45px;
+    }
 }
 /***          Footer         ***/
 footer textarea{

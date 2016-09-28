@@ -42,7 +42,7 @@ $(document).ready(function () {
         var elemTop = $(elem).first().offset().top;
         var elemBottom = elemTop + $(elem).first().height();
         for (i = 0; i < $(elem).length; i++) {
-            elemN=$(elem+":eq("+i+")")
+            elemN = $(elem + ":eq(" + i + ")")
             elemTop = elemN.offset().top;
             elemBottom = elemTop + elemN.height();
             if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop))
@@ -55,7 +55,7 @@ $(document).ready(function () {
     var navHeight = parseInt($("#nav").css("height"));
     var perc_are_loaded = 0;
     $(document).bind("scroll", function () {
-        if (isScrolledIntoView(".progress-circle-prog") && perc_are_loaded == 0) {
+        if (perc_are_loaded == 0 && $('.progress-circle-prog').is(':visible') && isScrolledIntoView(".progress-circle-prog")) {
             perc_are_loaded = 1;
             setTimeout(function () {
                 $('.progress-circle-prog').each(function () {
@@ -64,7 +64,7 @@ $(document).ready(function () {
                 })
             }, 500);
         }
-        /***    Scorrimento in alto per cellulari        ***/
+        /***    Scorrimento nav vesioni Desktop       ***/
 
         if ($(document).scrollTop() > $(".main").offset().top - navHeight) {
             $("#nav").css({
@@ -78,6 +78,8 @@ $(document).ready(function () {
                 top: "auto"
             });
         }
+        /***    Scorrimento in alto per cellulari        ***/
+
         if ($("#nav").css("display") == "none")
             if ($(document).scrollTop() > $(".main").offset().top)
                 $("#upArrow").css("display", "block");
@@ -91,7 +93,11 @@ $(document).ready(function () {
 
     $(".nav_section, .to_target").click(function () {
         elem = $("#" + $(this).attr("href").substr(1));
-        $("html, body").animate({scrollTop: elem.offset().top + "px"},
+        dis = elem.offset().top
+        if ($(this).hasClass("to_target") && $("#nav").css("display") == "block")
+            dis -= parseInt($("#nav").css("height"));
+
+        $("html, body").animate({scrollTop: dis + "px"},
                 500);
         return false;
     })
