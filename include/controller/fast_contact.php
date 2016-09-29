@@ -1,13 +1,14 @@
 <?php
 
 if (!empty($_POST['mail']) && !empty($_POST['content_txt']) && filter_var($_POST['mail'], FILTER_VALIDATE_EMAIL)) {
+    $sender_name = $_POST['mail'].' by Maxeo.it';
     $sender_mail = $_POST['mail'];
-    $target_mail = 'noreply@maxeo.it';
+    $target_mail = 'info@maxeo.it';
     $object_mail = 'Fast Contact - Contatto Rapido';
     $body_mail = $_POST['content_txt'];
     
     //Imposto gli headers
-    $mail_headers = "From:  $sender_mail\r\n";
+    $mail_headers = "From: " . $sender_name . " <" . $sender_mail . ">\r\n";
     $mail_headers .= "Reply-To: " . $target_mail . "\r\n";
     $mail_headers .= "X-Mailer: PHP/" . phpversion();
     
