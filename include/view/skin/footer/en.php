@@ -1,7 +1,7 @@
 						<footer id="footer">
 						<section>
 							<h2>Fast contact</h2>
-                                                        <form action="/it/sandMail" method="post">
+                                                        <form action="/en/sandMail" method="post">
                                                             <input type="email" placeholder="Write your email address"><br>
                                                             <textarea placeholder="Write the body of the message"></textarea>
                                                             <br>
