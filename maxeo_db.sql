@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Set 29, 2016 alle 21:14
+-- Creato il: Set 29, 2016 alle 21:32
 -- Versione del server: 5.7.11
 -- Versione PHP: 5.6.19
 
@@ -198,7 +198,8 @@ INSERT INTO `notices` (`ID`, `code`, `description`, `subject`, `functionality`, 
 (37, 'n-login-done', 'Login effettuato', '_login', 'notification', 'it'),
 (38, 'n-mistake-name-or-password', 'Il nome utente o la password sono errati.', '_login', 'notification', 'it'),
 (39, 'n-no-username-or-password', 'Per favore inserire nome utente e password', '_login', 'notification', 'it'),
-(40, 'n-email-sent-successfully', '<header class="major">\n<h2>Invio Eseguito</h2>\n</header>\n<p>\nLa mail è stata inviata con successo.<br> Grazie mille, risponderò il prima possibile.\n</p>', '_login', 'notification', 'it');
+(40, 'n-email-sent-successfully', '<header class="major">\n<h2>Invio Eseguito</h2>\n</header>\n<p>\nLa mail è stata inviata con successo.<br> Grazie mille, risponderò il prima possibile.\n</p>', '_login', 'notification', 'it'),
+(41, 'n-email-sent-successfully', '<header class="major">\r\n<h2>Sending Executed</h2>\r\n</header>\r\n<p>\r\nThe email was sent successfully.<br> Thank you, I will reply as soon as possible.\r\n</p>', '_login', 'notification', 'en');
 
 -- --------------------------------------------------------
 
@@ -415,7 +416,7 @@ ALTER TABLE `logs_data`
 -- AUTO_INCREMENT per la tabella `notices`
 --
 ALTER TABLE `notices`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 --
 -- AUTO_INCREMENT per la tabella `orders`
 --

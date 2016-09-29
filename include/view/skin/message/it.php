@@ -3,7 +3,7 @@
 									<div class="content">
                                                                             <?php
                                                                             $txt="";
-                                                                            if(Pageloader::getData(0)!==false){	//c'Ã¨ un messaggio da comunicare
+                                                                            if(Pageloader::getData(0)!==false){	//c'è un messaggio da comunicare
                                                                                     $m_code=Pageloader::getData(0);
                                                                                     $mess=Notification::showCode($m_code,NULL,true);
                                                                                     if($mess){
