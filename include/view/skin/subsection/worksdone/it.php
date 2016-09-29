@@ -51,7 +51,7 @@
 									<li class="style8">
                                                                             <a href="#proj_portalelv" class="to_target">
 										<span class="icon fa-eye"></span>
-                                                                                <strong>Portale LV</strong> Allena lo scuardo e la memoria
+                                                                                <strong>Portale LV</strong> Allena lo sguardo e la memoria
                                                                             </a>
 									</li>
 									<li class="style9">
@@ -63,7 +63,7 @@
 									<li class="style10">
                                                                             <a href="#proj_fyoulletto" class="to_target">
 										<span class="icon fa-database"></span>
-										<strong>Fyoulletto</strong> il mio primo programma gestionale
+										<strong>Fyoulletto</strong> Il mio primo programma gestionale
                                                                             </a>
 									</li>
                                                                         
@@ -75,7 +75,7 @@
                                                                     <a class="to_target" href="#headerTarget">Torna su</a></p>
                                                                 <p class="justify" id="proj_ifollettidelbosco">
                                                                     <span class="titleProj"><a target="_blank" class="no_borderB" href="http://www.ifollettidelbosco.it">I Folletti del Bosco:</a></span>
-                                                                    Il sito web dell'Asilo omonimo è stato creato nel 2014. Il passaggio tra una pagina all'altra avviene in modo morbido attraverso richieste ajax, nonostante tutto l'url cambia in modo tale da sembrare il passaggio da una pagina all'altra tramite l'evento pushstate di javascript. Vi è inoltre un area riservata, dove, tramite una password è possibile scaricare vari contenuti.<br>
+                                                                    Il sito web dell'Asilo omonimo è stato creato nel 2014. Il passaggio tra una pagina all'altra avviene in modo morbido attraverso richieste ajax, nonostante tutto l'url cambia in modo tale da sembrare il passaggio da una pagina all'altra tramite l'evento <a href="https://developer.mozilla.org/en-US/docs/Web/API/History_API">"PushState"</a> di javascript. Vi è inoltre un area riservata, dove, tramite una password è possibile scaricare vari contenuti.<br>
                                                                     <a class="to_target" href="#headerTarget">Torna su</a></p>
                                                                 <p class="justify" id="proj_mycloud">
                                                                     <span class="titleProj"><a target="_blank" class="no_borderB" href="http://cloud.demo.maxeo.it/">MyCloud</a></span>
@@ -108,7 +108,7 @@
                                                                     <a class="to_target" href="#headerTarget">Torna su</a></p>
                                                                 <p class="justify" id="proj_fyoulletto">
                                                                     <span class="titleProj"><a target="_blank" class="no_borderB" href="http://fyoulletto.demo.maxeo.it">Fyoulletto:</a></span>
-                                                                    Questo è stato il primo programma gestionale che ho creato. È strutturato per gestire i bambini dell'Asilo. È nato tra il 2009 e il 2010. Allora non erano disponibili database mysql con spazio gratuito così, per funzionare su altervista,  è stato realizzato senza, ma nonostante tutto fa il suo dovere. (<i>I dati inseriti nella demo sono fittizi</i>)<br>
+                                                                    Questo è stato il primo programma gestionale che ho creato. È strutturato per gestire i bambini dell'Asilo. È nato tra il 2009 e il 2010. Allora non erano disponibili database mysql con spazio gratuito così, per funzionare su <a href="http://it.altervista.org/">Altervista</a>,  è stato realizzato senza, ma nonostante tutto fa il suo dovere. (<i>I dati inseriti nella demo sono fittizi</i>)<br>
                                                                     <a class="to_target" href="#headerTarget">Torna su</a></p>
                                                                 
                                                                 

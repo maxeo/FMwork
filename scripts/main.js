@@ -1,7 +1,9 @@
 $(document).ready(function () {
 
     /***    Animazione Logo maxeo.it        ***/
-    function fadeLogo(tTr = 4) {
+    function fadeLogo(tTr) {
+        if (tTr == undefined)   //non capisco perchè safari non prenda il valore predefinito nella funzione
+            tTr = 4;
         $(".fadelogo").css({
             WebkitTransition: 'all ' + tTr + 's ease 0s',
             MozTransition: 'all ' + tTr + 's ease 0s',
@@ -14,7 +16,7 @@ $(document).ready(function () {
     }
     if ($(".logo").hasClass("animation")) {
         $(".fadelogo").css("opacity", 0);
-        if (window.screen.width > 620) {
+        if (window.screen.width > 620 && !(window.navigator.userAgent.indexOf("Edge") > -1)) {
             $(".rollinglogo img").css("opacity", 1).css("transform", "rotate(900deg)");
             setTimeout(function () {
                 fadeLogo()
@@ -31,10 +33,21 @@ $(document).ready(function () {
             fadeLogo(6)
         }, 500);
     }
+    /***    Fix Safari        ***/
 
+    if (window.navigator.userAgent.indexOf("Safari") > -1) {
+        loadPercent();
+    }
     /***    Animazione percentuali        ***/
-
-
+    function updatePercent(selector, percent) {
+        selector.get(0).style.strokeDasharray = (percent * 4.65) + ' 1000';
+    }
+    function loadPercent() {
+        $('.progress-circle-prog').each(function () {
+            $(this).css("stroke", "#" + $(this).attr("data-color"));
+            updatePercent($(this), $(this).attr("data-perc"));
+        })
+    }
     function isScrolledIntoView(elem)   //verifica se l'elemento è sato letto
     {
         var docViewTop = $(window).scrollTop();
@@ -49,19 +62,14 @@ $(document).ready(function () {
                 return true;
         }
     }
-    function updatePercent(selector, percent) {
-        selector.get(0).style.strokeDasharray = (percent * 4.65) + ' 1000';
-    }
+
     var navHeight = parseInt($("#nav").css("height"));
     var perc_are_loaded = 0;
     $(document).bind("scroll", function () {
         if (perc_are_loaded == 0 && $('.progress-circle-prog').is(':visible') && isScrolledIntoView(".progress-circle-prog")) {
             perc_are_loaded = 1;
             setTimeout(function () {
-                $('.progress-circle-prog').each(function () {
-                    $(this).css("stroke", "#" + $(this).attr("data-color"));
-                    updatePercent($(this), $(this).attr("data-perc"));
-                })
+                loadPercent();
             }, 500);
         }
         /***    Scorrimento nav vesioni Desktop       ***/

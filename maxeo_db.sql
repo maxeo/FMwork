@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Set 26, 2016 alle 22:20
+-- Creato il: Set 29, 2016 alle 14:01
 -- Versione del server: 5.7.11
 -- Versione PHP: 5.6.19
 
@@ -105,7 +105,7 @@ CREATE TABLE `connections` (
 --
 
 INSERT INTO `connections` (`ID`, `IDuser`, `keyConnection`, `clientIP`, `first_connection`, `lang`, `browser_info`, `time_connection`, `captcha_key`) VALUES
-(1, 0, 'y3ZqvqGwkHBJKbF8P6jb7XjTNnX7TGt6DWqI4bInMqP9XIeIOxUmC02diQ1AzHlX', '127.0.0.1', 'fmwork', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-09-26 22:19:32', '');
+(1, 0, 'mzWi2SDn6oj14E4zK4Zv2zVITQRIr1hnS24Rr6xngd3vgmOjkki8L6I0dajtFEfQ', '127.0.0.1', 'fmwork', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-09-29 13:58:15', '');
 
 -- --------------------------------------------------------
 
@@ -273,7 +273,7 @@ INSERT INTO `page_elements` (`ID`, `name`, `path`) VALUES
 (7, 'tAbout-me', 'main/about-me/'),
 (8, 'tMainSkills', 'main/skills/'),
 (9, 'tMainWorksdone', 'main/worksdone/'),
-(5, 'tHeader', 'header.html'),
+(5, 'tHeader', 'header.php'),
 (10, 'tsAbout-me', 'subsection/about-me/'),
 (3, 'tNav', 'nav/'),
 (12, 'tsWorksdone', 'subsection/worksdone/'),
