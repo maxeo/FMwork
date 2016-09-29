@@ -1,9 +1,9 @@
 						<footer id="footer">
 						<section>
 							<h2>Contatto veloce</h2>
-                                                        <form action="/it/sandMail" method="post">
-                                                            <input type="email" placeholder="Scrivi qui la tua mail"><br>
-                                                            <textarea placeholder="Scrivi il corpo del messaggio" style="width: 100%;min-height: 115px;resize:none;"></textarea>
+                                                        <form class="fast_contact" action="/it/sandMail" method="post">
+                                                            <input name="mail" type="email" placeholder="Scrivi qui la tua mail"><br>
+                                                            <textarea name="content_txt" placeholder="Scrivi il corpo del messaggio"></textarea>
                                                             <br>
                                                             <ul class="actions">
                                                                 <li><input type="submit" value="Contattami"></li>

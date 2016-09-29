@@ -199,9 +199,9 @@ class Pageloader {
         }
     }
 
-    public static function locationToMessage($message_num) {
-        if (self::correctLanguage()) {
-            header("Location: " . "/it/" . self::$pageSettings['location_message_path'][self::getData("lang")] . "/" . $message_num);
+    public static function locationToMessage($message,$lang=NULL) {
+        if (self::correctLanguage($lang)) {
+            header("Location: " . Pageloader::pageFromTarget("report", false,  $lang). "/" . $message);
             return true;
         } else
             return false;

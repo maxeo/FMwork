@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Set 29, 2016 alle 14:01
+-- Creato il: Set 29, 2016 alle 21:14
 -- Versione del server: 5.7.11
 -- Versione PHP: 5.6.19
 
@@ -105,7 +105,9 @@ CREATE TABLE `connections` (
 --
 
 INSERT INTO `connections` (`ID`, `IDuser`, `keyConnection`, `clientIP`, `first_connection`, `lang`, `browser_info`, `time_connection`, `captcha_key`) VALUES
-(1, 0, 'mzWi2SDn6oj14E4zK4Zv2zVITQRIr1hnS24Rr6xngd3vgmOjkki8L6I0dajtFEfQ', '127.0.0.1', 'fmwork', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-09-29 13:58:15', '');
+(1, 0, 'mzWi2SDn6oj14E4zK4Zv2zVITQRIr1hnS24Rr6xngd3vgmOjkki8L6I0dajtFEfQ', '127.0.0.1', 'fmwork', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-09-29 13:58:15', ''),
+(2, 0, 'PWhVlabjuDtglZBf12tAOUQknGjDu4uy0bpPBX58q7kkMgXBifv59KW6Cov0OLKo', '127.0.0.1', 'fmwork', 'it', 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)', '2016-09-29 15:02:24', ''),
+(3, 0, 'rqTBLq6bZo2VZ1EEge2vNkdo5oQBAJOd7QOn4BLYyKXExl7Zc9tB2PpFFEB1Ql8r', '127.0.0.1', 'fmwork', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-09-29 21:00:52', '');
 
 -- --------------------------------------------------------
 
@@ -193,9 +195,10 @@ INSERT INTO `notices` (`ID`, `code`, `description`, `subject`, `functionality`, 
 (34, 'USE-F0005', 'mail non valida', 'User', 'activeUser', 'it'),
 (35, 'USE-F0006', 'la mail è già stata attivata o la chiave di attivazione non è valida', 'User', 'activeUser', 'it'),
 (36, 'USE-F0007', 'Non è stato possibile caricare l\'utente in quanto non esiste', 'User', 'loadUser', 'it'),
-(37, 'n_login_done', 'Login effettuato', '_login', 'notification', 'it'),
-(38, 'n_mistake_name_or_password', 'Il nome utente o la password sono errati.', '_login', 'notification', 'it'),
-(39, 'n_no_username_or_password', 'Per favore inserire nome utente e password', '_login', 'notification', 'it');
+(37, 'n-login-done', 'Login effettuato', '_login', 'notification', 'it'),
+(38, 'n-mistake-name-or-password', 'Il nome utente o la password sono errati.', '_login', 'notification', 'it'),
+(39, 'n-no-username-or-password', 'Per favore inserire nome utente e password', '_login', 'notification', 'it'),
+(40, 'n-email-sent-successfully', '<header class="major">\n<h2>Invio Eseguito</h2>\n</header>\n<p>\nLa mail è stata inviata con successo.<br> Grazie mille, risponderò il prima possibile.\n</p>', '_login', 'notification', 'it');
 
 -- --------------------------------------------------------
 
@@ -247,7 +250,9 @@ INSERT INTO `pages` (`ID`, `name`, `type_page`, `path`, `terget_page`, `lang`) V
 (10, 'skills', 'view', 'include/view/bone/subsection/skills.php', 'skills', 'en'),
 (11, 'competenze', 'view', 'include/view/bone/subsection/skills.php', 'skills', 'it'),
 (12, 'lavori-svolti', 'view', 'include/view/bone/subsection/worksdone.php', 'worksdone', 'it'),
-(13, 'works-done', 'view', 'include/view/bone/subsection/worksdone.php', 'worksdone', 'en');
+(13, 'works-done', 'view', 'include/view/bone/subsection/worksdone.php', 'worksdone', 'en'),
+(14, 'sandMail', 'controller', 'include/controller/fast_contact.php', NULL, '*'),
+(15, 'comunicazione', 'view', 'include/view/bone/report/message.php', 'report', 'it');
 
 -- --------------------------------------------------------
 
@@ -277,7 +282,8 @@ INSERT INTO `page_elements` (`ID`, `name`, `path`) VALUES
 (10, 'tsAbout-me', 'subsection/about-me/'),
 (3, 'tNav', 'nav/'),
 (12, 'tsWorksdone', 'subsection/worksdone/'),
-(11, 'tsSkills', 'subsection/skills/');
+(11, 'tsSkills', 'subsection/skills/'),
+(13, 'tMessage', 'message/');
 
 -- --------------------------------------------------------
 
@@ -394,7 +400,7 @@ ALTER TABLE `chat`
 -- AUTO_INCREMENT per la tabella `connections`
 --
 ALTER TABLE `connections`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT per la tabella `files_list`
 --
@@ -409,7 +415,7 @@ ALTER TABLE `logs_data`
 -- AUTO_INCREMENT per la tabella `notices`
 --
 ALTER TABLE `notices`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 --
 -- AUTO_INCREMENT per la tabella `orders`
 --
@@ -419,12 +425,12 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT per la tabella `pages`
 --
 ALTER TABLE `pages`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT per la tabella `page_elements`
 --
 ALTER TABLE `page_elements`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT per la tabella `users`
 --

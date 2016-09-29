@@ -31,7 +31,11 @@
     font-size: 24px;
     color: #333399;
 }
-
+.fast_contact textarea{
+    width: 100%;
+    min-height: 115px;
+    resize:none;
+}
 .justify{
     text-align: justify;
 }
