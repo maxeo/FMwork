@@ -99,7 +99,7 @@ class Pageloader {
             $query = "SELECT * FROM `pages` WHERE `name` = :name AND `lang` = :lang";
             $res = $dbCon->selection($query, array(':name' => $page, ':lang' => "*"));
             if (!empty($res)) {
-                self::$data['target'] = @$res['terget_page'];
+                self::$data['target'] = $res['terget_page'];
                 return $res['path'];
             } else
                 return false;
