@@ -7,9 +7,9 @@
 										<div class="progress">
                                                                                     <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
                                                                                         <circle class="progress-circle-back" cx="80" cy="80" r="74"></circle>
-                                                                                        <circle class="progress-circle-prog" data-perc="85" data-color="efa8b0" cx="80" cy="80" r="74"></circle>
+                                                                                        <circle class="progress-circle-prog" data-perc="90" data-color="efa8b0" cx="80" cy="80" r="74"></circle>
                                                                                     </svg>
-                                                                                          <div class="progress-text" data-progress="0">85%</div>
+                                                                                          <div class="progress-text" data-progress="0">90%</div>
                                                                                 </div>	
 										<h3>PHP</h3>
 										<p>It is the programming language I know best, I focused on the relationship with the objects, I made the framework used to made this website in PHP.</p>
@@ -29,11 +29,11 @@
                                                                         <li>
 										<div class="progress">
                                                                                     <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
-                                                                                        <circle class="progress-circle-back" x="80" cy="80" r="74"></circle>
+                                                                                        <circle class="progress-circle-back" cx="80" cy="80" r="74"></circle>
                                                                                         <circle class="progress-circle-prog" data-perc="75"data-color="8cc9f0" cx="80" cy="80" r="74"></circle>
                                                                                     </svg>
                                                                                           <div class="progress-text" data-progress="0">75%</div>
-                                                                                </div>	
+                                                                                </div>		
 										<h3>Javascript & JQuery</h3>
 										<p>This is another language I well depth; particularly when linked to the JQuery library; most of this page script are realized with this language.</p>
 									</li>

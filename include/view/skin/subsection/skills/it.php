@@ -7,9 +7,9 @@
 										<div class="progress">
                                                                                     <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
                                                                                         <circle class="progress-circle-back" cx="80" cy="80" r="74"></circle>
-                                                                                        <circle class="progress-circle-prog" data-perc="85" data-color="efa8b0" cx="80" cy="80" r="74"></circle>
+                                                                                        <circle class="progress-circle-prog" data-perc="90" data-color="efa8b0" cx="80" cy="80" r="74"></circle>
                                                                                     </svg>
-                                                                                          <div class="progress-text" data-progress="0">85%</div>
+                                                                                          <div class="progress-text" data-progress="0">90%</div>
                                                                                 </div>	
 										<h3>PHP</h3>
 										<p>È il linguaggio di programmazione che conosco meglio, approfondito il rapporto con gli oggetti, il framework con cui è fatto questo sito l'ho realizzato in PHP.</p>

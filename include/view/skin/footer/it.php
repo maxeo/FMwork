@@ -15,9 +15,9 @@
 							<dl class="alt">
 								<dt>Indirizzo</dt>
 								<dd>Via Concetto Marchesi 7 &bull; San Giovanni Valdarno, AREZZO 52027 &bull; ITALIA</dd>
-								<dt>Phone</dt>
-								<dd>(0039) 055-0456284</dd>
-                                                                <dd>(0039) 392-0560787</dd>
+								<dt>Telefono</dt>
+                                                                <dd><a href="tel:+39055046284">(0039) 055-0456284</a></dd>
+                                                                <dd><a href="tel:+393920560787">(0039) 392-0560787</a></dd>
 								<dt>Email</dt>
                                                                 <dd class="mailBoxm"><a href="#" class="mailBoxm"></a><img src="/imgs/infomail.png"></dd>
 							</dl>
