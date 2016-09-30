@@ -11,7 +11,7 @@
                                                         </form>
 						</section>
 						<section>
-							<h2>Contatti</h2>
+							<h2>Contacts</h2>
 							<dl class="alt">
 								<dt>Address</dt>
 								<dd>7 Via Concetto Marchesi &bull; San Giovanni Valdarno, AREZZO 52027 &bull; ITALY</dd>
