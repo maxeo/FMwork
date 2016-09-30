@@ -75,7 +75,7 @@
                                                                     <a class="to_target" href="#headerTarget">Torna su</a></p>
                                                                 <p class="justify" id="proj_ifollettidelbosco">
                                                                     <span class="titleProj"><a target="_blank" class="no_borderB" href="http://www.ifollettidelbosco.it">I Folletti del Bosco:</a></span>
-                                                                    The website Asylum same name was created in 2014. The transition from one page to the next is soft through ajax requests, in spite of all the URL changes in such a it seems the transition from page to page through a javascript event <a href="https://developer.mozilla.org/en-US/docs/Web/API/History_API">"PushState"</a>. There is also a reserved area, where, through a password you can download various content.<br>
+                                                                    The website nursery same name was created in 2014. The transition from one page to the next is soft through ajax requests, in spite of all the URL changes in such a it seems the transition from page to page through a javascript event <a href="https://developer.mozilla.org/en-US/docs/Web/API/History_API">"PushState"</a>. There is also a reserved area, where, through a password you can download various content.<br>
                                                                     <a class="to_target" href="#headerTarget">Torna su</a></p>
                                                                 <p class="justify" id="proj_mycloud">
                                                                     <span class="titleProj"><a target="_blank" class="no_borderB" href="http://cloud.demo.maxeo.it/">MyCloud</a></span>
@@ -108,7 +108,7 @@
                                                                     <a class="to_target" href="#headerTarget">Torna su</a></p>
                                                                 <p class="justify" id="proj_fyoulletto">
                                                                     <span class="titleProj"><a target="_blank" class="no_borderB" href="http://fyoulletto.demo.maxeo.it">Fyoulletto:</a></span>
-                                                                    This was the first management program that I created. It is structured to manage children of a Asylum. It was born between 2009 and 2010. So they were not mysql database available with free space as well, to run on <a href="http://it.altervista.org/">Altervista</a>, it was accomplished without, but nevertheless does his duty. (<i>The data included in the demo are fictitious</i>)<br>
+                                                                    This was the first management program that I created. It is structured to manage children of a nursery. It was born between 2009 and 2010. So they were not mysql database available with free space as well, to run on <a href="http://it.altervista.org/">Altervista</a>, it was accomplished without, but nevertheless does his duty. (<i>The data included in the demo are fictitious</i>)<br>
                                                                     <a class="to_target" href="#headerTarget">Torna su</a></p>
                                                                 
                                                                 
