@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Set 30, 2016 alle 09:55
+-- Creato il: Set 30, 2016 alle 11:12
 -- Versione del server: 5.7.11
 -- Versione PHP: 5.6.19
 
@@ -105,11 +105,8 @@ CREATE TABLE `connections` (
 --
 
 INSERT INTO `connections` (`ID`, `IDuser`, `keyConnection`, `clientIP`, `first_connection`, `lang`, `browser_info`, `time_connection`, `captcha_key`) VALUES
-(1, 0, 'mzWi2SDn6oj14E4zK4Zv2zVITQRIr1hnS24Rr6xngd3vgmOjkki8L6I0dajtFEfQ', '127.0.0.1', 'fmwork', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-09-29 13:58:15', ''),
-(2, 0, 'PWhVlabjuDtglZBf12tAOUQknGjDu4uy0bpPBX58q7kkMgXBifv59KW6Cov0OLKo', '127.0.0.1', 'fmwork', 'it', 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)', '2016-09-29 15:02:24', ''),
-(3, 0, 'rqTBLq6bZo2VZ1EEge2vNkdo5oQBAJOd7QOn4BLYyKXExl7Zc9tB2PpFFEB1Ql8r', '127.0.0.1', 'fmwork', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-09-29 21:00:52', ''),
-(4, 0, 'y5M50eAjGuaogFGwWDlC83IzWPS27PgReDUazYAZVT7JOJQWWMNhMWC32HdVTMKl', '127.0.0.1', 'fmwork', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-09-29 23:15:50', ''),
-(5, 0, 'pq6CnVOYoBXglbmRXpAzRKGYofYIhvW8oyTgfjIixtjUmzpkQrVxCR7BRRDQbmt3', '127.0.0.1', 'fmwork', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-09-30 09:54:02', '');
+(1, 0, 'M0n7ttMEJLqnaXS44vm84zR2ud0pDbiNil3Vb0sF0Sin10VKBYaRMbrbgem3BAFe', '127.0.0.1', 'fmwork', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-09-30 10:52:34', ''),
+(2, 0, 'PotJHsXZq9CbkbCiHtPp0tjo5VezJTspIhvEFdEm7b5gsw7FUFketxJujrJx4HDf', '127.0.0.1', 'fmwork', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-09-30 11:05:09', '');
 
 -- --------------------------------------------------------
 
@@ -200,8 +197,14 @@ INSERT INTO `notices` (`ID`, `code`, `description`, `subject`, `functionality`, 
 (37, 'n-login-done', 'Login effettuato', '_login', 'notification', 'it'),
 (38, 'n-mistake-name-or-password', 'Il nome utente o la password sono errati.', '_login', 'notification', 'it'),
 (39, 'n-no-username-or-password', 'Per favore inserire nome utente e password', '_login', 'notification', 'it'),
-(40, 'n-email-sent-successfully', '<header class="major">\n<h2>Invio Eseguito</h2>\n</header>\n<p>\nLa mail è stata inviata con successo.<br> Grazie mille, risponderò il prima possibile.\n</p>', '_login', 'notification', 'it'),
-(41, 'n-email-sent-successfully', '<header class="major">\r\n<h2>Sending Executed</h2>\r\n</header>\r\n<p>\r\nThe email was sent successfully.<br> Thank you, I will reply as soon as possible.\r\n</p>', '_login', 'notification', 'en');
+(40, 'n-email-sent-successfully', '<header class="major">\n<h2>Invio Eseguito</h2>\n</header>\n<p>\nLa mail è stata inviata con successo.<br> Grazie mille, risponderò il prima possibile.\n</p>', '_fast_contact', 'notification', 'it'),
+(41, 'n-email-sent-successfully', '<header class="major">\r\n<h2>Sending Executed</h2>\r\n</header>\r\n<p>\r\nThe email was sent successfully.<br> Thank you, I will reply as soon as possible.\r\n</p>', '_fast_contact', 'notification', 'en'),
+(42, 'n-email-is-not-correct', '<header class="major">\n<h2>La mail non è corretta</h2>\n</header>\n<p>\nNon è stato possibile inviare la mail poichè la mail inserita non è corretta.<br>\nPer favore inserisci l\'indirizzo email corretto e riprova.\n</p>', '_fast_contact', 'notification', 'it'),
+(43, 'n-email-is-not-correct', '<header class="major">\n<h2>The email is not correct</h2>\n</header>\n<p>\nWe could not send the email because the email address you entered is not correct.\nPlease enter the correct email address and try again.\n</p>', '_fast_contact', 'notification', 'en'),
+(44, 'n-email-or-text-box-empty', '<header class="major">\r\n<h2>La mail o la casella di testo sono vuote</h2>\r\n</header>\r\n<p>\r\nNon è possibile in viare il messaggio poichè la mail o la casella di testo sono vuote.\r\nPer favore compila entrambi i campi e riprova.\r\n</p>', '_fast_contact', 'notification', 'it'),
+(45, 'n-email-or-text-box-empty', '<header class="major">\n<h2>The mail or the text box are empty</h2>\n</header>\n<p>\nWe can not send the message because the mail or the text box are empty.\nPlease compile both fields and try again.\n</p>', '_fast_contact', 'notification', 'en'),
+(46, 'n-email-not-sent-sever', '<header class="major">\n<h2>Impossible inviare la mail</h2>\n</header>\n<p>\nNon è stato possibile inviare la mail a causa di un problema con i nostri server.<br>\nCi scusiamo per il disagio, per favore riprova più tardi.\n</p>', '_fast_contact', 'notification', 'it'),
+(47, 'n-email-not-sent-sever', '<header class="major">\n<h2>Unable to send mail</h2>\n</header>\n<p>\nWe could not send the email due to a problem with our server.<br>\nWe apologize for the inconvenience, please try again later.\n</p>', '_fast_contact', 'notification', 'en');
 
 -- --------------------------------------------------------
 
@@ -278,7 +281,7 @@ INSERT INTO `page_elements` (`ID`, `name`, `path`) VALUES
 (6, 'tFooter', 'footer/'),
 (4, 'tNavHome', 'nav_home/'),
 (2, 'tHeaderHome', 'header_home.html'),
-(1, 'tHead', 'head.html'),
+(1, 'tHead', 'head.php'),
 (7, 'tAbout-me', 'main/about-me/'),
 (8, 'tMainSkills', 'main/skills/'),
 (9, 'tMainWorksdone', 'main/worksdone/'),
@@ -404,7 +407,7 @@ ALTER TABLE `chat`
 -- AUTO_INCREMENT per la tabella `connections`
 --
 ALTER TABLE `connections`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT per la tabella `files_list`
 --
@@ -419,7 +422,7 @@ ALTER TABLE `logs_data`
 -- AUTO_INCREMENT per la tabella `notices`
 --
 ALTER TABLE `notices`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 --
 -- AUTO_INCREMENT per la tabella `orders`
 --

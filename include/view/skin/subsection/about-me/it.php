@@ -15,8 +15,6 @@
                                                                                     L'anno seguente, dato che mia madre ha un asilo nido ed allora era un po' in difficoltà a causa di una maternità sono andato a lavorare da lei come educatore e responsabile amministrativo presso l'<a href="http://www.ifollettidelbosco.it/"><b>Asilo Nido I Folletti del Bosco</b></a>.<br>
                                                                                     Anche qui mi sono dato da fare in campo informatico, scrivendo il <a href="http://www.ifollettidelbosco.it/">sito dell'asilo</a> e ottimizzando un po' la parte SEO.<br>
                                                                                     Finita la maternità all'asilo nido ho preso partita iva. Adesso lavoro come consulente informatico.
-                                                                                    
-                                                                                    
 										</p>
 									</div>
 									
