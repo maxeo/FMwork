@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Set 29, 2016 alle 21:32
+-- Creato il: Set 30, 2016 alle 09:55
 -- Versione del server: 5.7.11
 -- Versione PHP: 5.6.19
 
@@ -107,7 +107,9 @@ CREATE TABLE `connections` (
 INSERT INTO `connections` (`ID`, `IDuser`, `keyConnection`, `clientIP`, `first_connection`, `lang`, `browser_info`, `time_connection`, `captcha_key`) VALUES
 (1, 0, 'mzWi2SDn6oj14E4zK4Zv2zVITQRIr1hnS24Rr6xngd3vgmOjkki8L6I0dajtFEfQ', '127.0.0.1', 'fmwork', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-09-29 13:58:15', ''),
 (2, 0, 'PWhVlabjuDtglZBf12tAOUQknGjDu4uy0bpPBX58q7kkMgXBifv59KW6Cov0OLKo', '127.0.0.1', 'fmwork', 'it', 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)', '2016-09-29 15:02:24', ''),
-(3, 0, 'rqTBLq6bZo2VZ1EEge2vNkdo5oQBAJOd7QOn4BLYyKXExl7Zc9tB2PpFFEB1Ql8r', '127.0.0.1', 'fmwork', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-09-29 21:00:52', '');
+(3, 0, 'rqTBLq6bZo2VZ1EEge2vNkdo5oQBAJOd7QOn4BLYyKXExl7Zc9tB2PpFFEB1Ql8r', '127.0.0.1', 'fmwork', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-09-29 21:00:52', ''),
+(4, 0, 'y5M50eAjGuaogFGwWDlC83IzWPS27PgReDUazYAZVT7JOJQWWMNhMWC32HdVTMKl', '127.0.0.1', 'fmwork', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-09-29 23:15:50', ''),
+(5, 0, 'pq6CnVOYoBXglbmRXpAzRKGYofYIhvW8oyTgfjIixtjUmzpkQrVxCR7BRRDQbmt3', '127.0.0.1', 'fmwork', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-09-30 09:54:02', '');
 
 -- --------------------------------------------------------
 
@@ -253,7 +255,8 @@ INSERT INTO `pages` (`ID`, `name`, `type_page`, `path`, `terget_page`, `lang`) V
 (12, 'lavori-svolti', 'view', 'include/view/bone/subsection/worksdone.php', 'worksdone', 'it'),
 (13, 'works-done', 'view', 'include/view/bone/subsection/worksdone.php', 'worksdone', 'en'),
 (14, 'sandMail', 'controller', 'include/controller/fast_contact.php', NULL, '*'),
-(15, 'comunicazione', 'view', 'include/view/bone/report/message.php', 'report', 'it');
+(15, 'comunicazione', 'view', 'include/view/bone/report/message.php', 'report', 'it'),
+(16, 'report', 'view', 'include/view/bone/report/message.php', 'report', 'en');
 
 -- --------------------------------------------------------
 
@@ -401,7 +404,7 @@ ALTER TABLE `chat`
 -- AUTO_INCREMENT per la tabella `connections`
 --
 ALTER TABLE `connections`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT per la tabella `files_list`
 --
@@ -426,7 +429,7 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT per la tabella `pages`
 --
 ALTER TABLE `pages`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT per la tabella `page_elements`
 --

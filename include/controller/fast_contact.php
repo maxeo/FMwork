@@ -16,7 +16,7 @@ if (!empty($_POST['mail']) && !empty($_POST['content_txt']) && filter_var($_POST
         mail($target_mail, $object_mail, $body_mail, $mail_headers);
         Pageloader::locationToMessage("n-email-sent-successfully");
     } catch (Exception $ex) {
-        //todo: gestire eccezione
+        //todo: gestire eccezione, anche perchè il try catch non funziona tramite mail ma bisogna usare l'if, comunque sia è ca contollare
     }
 }
  else {

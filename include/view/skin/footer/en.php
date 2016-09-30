@@ -1,21 +1,21 @@
 						<footer id="footer">
 						<section>
 							<h2>Fast contact</h2>
-                                                        <form action="/en/sandMail" method="post">
-                                                            <input type="email" placeholder="Write your email address"><br>
-                                                            <textarea placeholder="Write the body of the message"></textarea>
+                                                        <form class="fast_contact" action="/en/sandMail" method="post">
+                                                            <input name="mail" type="email" placeholder="Write your email address"><br>
+                                                            <textarea name="content_txt" placeholder="Write the body of the message"></textarea>
                                                             <br>
                                                             <ul class="actions">
-                                                                <li><input type="submit" value="Contact me"></li>
+                                                                <li><input type="submit" value="Contattami"></li>
                                                             </ul>
                                                         </form>
 						</section>
 						<section>
-							<h2>Contacts</h2>
+							<h2>Contatti</h2>
 							<dl class="alt">
 								<dt>Address</dt>
 								<dd>7 Via Concetto Marchesi &bull; San Giovanni Valdarno, AREZZO 52027 &bull; ITALY</dd>
-								<dt>Phone</dt>
+								<dt>Telefono</dt>
                                                                 <dd><a href="tel:+39055046284">(0039) 055-0456284</a></dd>
                                                                 <dd><a href="tel:+393920560787">(0039) 392-0560787</a></dd>
 								<dt>Email</dt>
