@@ -6,7 +6,7 @@
                                                             <textarea name="content_txt" placeholder="Write the body of the message"></textarea>
                                                             <br>
                                                             <ul class="actions">
-                                                                <li><input type="submit" value="Contattami"></li>
+                                                                <li><input type="submit" value="Contact me"></li>
                                                             </ul>
                                                         </form>
 						</section>
