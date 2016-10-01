@@ -38,12 +38,17 @@ $(document).ready(function () {
     if (window.navigator.userAgent.indexOf("Safari") > -1) {
         loadPercent();
     }
+
     /***    Animazione percentuali        ***/
     function updatePercent(selector, percent) {
         selector.get(0).style.strokeDasharray = (percent * 4.65) + ' 1000';
     }
     function loadPercent() {
         $('.progress-circle-prog').each(function () {
+            /***   Fix iPad   ***/
+            if (window.navigator.userAgent.indexOf("iPad") > 1) {
+                $(".progress-text").css("top", "-150px");
+            }
             $(this).css("stroke", "#" + $(this).attr("data-color"));
             updatePercent($(this), $(this).attr("data-perc"));
         })
