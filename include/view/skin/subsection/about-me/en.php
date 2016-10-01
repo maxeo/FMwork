@@ -6,7 +6,7 @@
 										</header>
                                                                                 <p>
                                                                                     <span class="image maxPhoto"><img src="/imgs/me.jpg" alt="Matteo Burbui" title="Matteo Burbui" /></span>
-										    My name is Matthew Burbui, I was born in Figline Valdarno August 17, 1990. At the moment I live in San Giovanni Valdarno.<br>
+																					My name is Matteo Burbui, I was born in Figline Valdarno August 17, 1990. At the moment I live in San Giovanni Valdarno.<br>
                                                                                     In high school I studied pedagogy, but it wasn't my way, so during the school time I studied <b>HTML</b>, <b>PHP</b> and <b>JavaScript</b>.
                                                                                     I worked as a typesetter for the label manufacturer <a href="http://www.ogasrl.it/"><b>Oga</b></a> for three years, and here I made some little programs for the company like custom calculators, work diary or utility.<br>
                                                                                     Even though I had a good salary and all in all it was not bad, after three years, I decided to go back to school, I began enrolling to computer engineering.
