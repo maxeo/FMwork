@@ -5,10 +5,6 @@ $(document).ready(function () {
         if (tTr == undefined)   //non capisco perchè safari non prenda il valore predefinito nella funzione
             tTr = 4;
         $(".fadelogo").css({
-            WebkitTransition: 'all ' + tTr + 's ease 0s',
-            MozTransition: 'all ' + tTr + 's ease 0s',
-            MsTransition: 'all ' + tTr + 's ease 0s',
-            OTransition: 'all ' + tTr + 's ease 0s',
             transition: 'all ' + tTr + 's ease 0s',
             visibility: 'visible',
             opacity: 1
