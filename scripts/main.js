@@ -10,17 +10,23 @@ $(document).ready(function () {
             opacity: 1
         });
     }
+    var animationState = 0;
     if ($(".logo").hasClass("animation")) {
+        animationState++;
         $(".fadelogo").css("opacity", 0);
         if (window.screen.width > 620 && !(window.navigator.userAgent.indexOf("Edge") > -1)) {
+            animationState++;
             $(".rollinglogo img").css("opacity", 1).css("transform", "rotate(900deg)");
             setTimeout(function () {
                 fadeLogo()
+                animationState++;
             }, 4000);
         } else {
+            animationState++;
             $(".rollinglogo img").css("display", "none")
             setTimeout(function () {
                 fadeLogo()
+                animationState++;
             }, 500);
         }
     } else {
@@ -29,11 +35,26 @@ $(document).ready(function () {
             fadeLogo(6)
         }, 500);
     }
+    $(window).on("orientationchange", function (event) {    //fix per cambio orientamento
+        if (animationState > 2)
+            $(".rollinglogo img").css("display", "none")
+        else
+            $(".rollinglogo img").css("opacity", 0)
+        $(".fadelogo").css("opacity", 0);
+        setTimeout(function () {
+            fadeLogo(6)
+        }, 500);
+    });
+
+
+
+
     /***    Fix Safari        ***/
 
     if (window.navigator.userAgent.indexOf("Safari") > -1) {
         loadPercent();
     }
+
 
     /***    Animazione percentuali        ***/
     function updatePercent(selector, percent) {
