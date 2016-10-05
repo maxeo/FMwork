@@ -13,11 +13,13 @@
         <section>
             <h2>Contatti</h2>
             <dl class="alt">
-                <dt>Indirizzo</dt>
-                <dd>Via Concetto Marchesi 7 &bull; San Giovanni Valdarno, AREZZO 52027 &bull; ITALIA</dd>
-                <dt>Telefono</dt>
-                <dd><a href="tel:+39055046284">(0039) 055-0456284</a></dd>
-                <dd><a href="tel:+393920560787">(0039) 392-0560787</a></dd>
+                <address>
+                    <dt>Indirizzo</dt>
+                    <dd>Via Concetto Marchesi 7 &bull; San Giovanni Valdarno, AREZZO 52027 &bull; ITALIA</dd>
+                    <dt>Telefono</dt>
+                    <dd><a href="tel:+39055046284">(0039) 055-0456284</a></dd>
+                    <dd><a href="tel:+393920560787">(0039) 392-0560787</a></dd>
+                </address>
                 <dt>Email</dt>
                 <dd class="mailBoxm"><a href="#" class="mailBoxm"></a><img src="/imgs/infomail.png"></dd>
             </dl>
@@ -27,5 +29,5 @@
                 <li><a href="https://github.com/maxeo" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
             </ul>
         </section>
-        <p class="copyright">&copy; Maxeo.it. Design: <a href="https://html5up.net">HTML5 UP</a> and <a href="http://maxeo.it">Maxeo</a>. Animations: <a href="http://maxeo.it">Maxeo</a>.</p>
+        <p class="copyright">&copy; Maxeo.it. Design: <a href="https://html5up.net">HTML5 UP</a> e <a href="http://maxeo.it">Maxeo</a>. Animazioni: <a href="http://maxeo.it">Maxeo</a>.</p>
     </footer>

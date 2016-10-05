@@ -13,11 +13,13 @@
         <section>
             <h2>Contacts</h2>
             <dl class="alt">
+                <address>
                 <dt>Address</dt>
-                <dd>7 Via Concetto Marchesi &bull; San Giovanni Valdarno, AREZZO 52027 &bull; ITALY</dd>
-                <dt>Telefono</dt>
-                <dd><a href="tel:+39055046284">(0039) 055-0456284</a></dd>
-                <dd><a href="tel:+393920560787">(0039) 392-0560787</a></dd>
+                    <dd>7 Via Concetto Marchesi &bull; San Giovanni Valdarno, AREZZO 52027 &bull; ITALY</dd>
+                    <dt>Telefono</dt>
+                    <dd><a href="tel:+39055046284">(0039) 055-0456284</a></dd>
+                    <dd><a href="tel:+393920560787">(0039) 392-0560787</a></dd>
+                </address>
                 <dt>Email</dt>
                 <dd class="mailBoxm"><a href="#" class="mailBoxm"></a><img src="/imgs/infomail.png"></dd>
             </dl>
