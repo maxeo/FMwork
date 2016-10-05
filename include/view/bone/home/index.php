@@ -1,7 +1,7 @@
 <?php
 Pageloader::addTag("!DOCTYPE html", NULL, 0, 1);
 Pageloader::ln();
-Pageloader::addTag("html", NULL, 0, 1);
+Pageloader::addTag('html lang="'.Pageloader::getData("lang").'"', NULL, 0, 1);
 Pageloader::ln();
 Pageloader::addElement("tHead");
 Pageloader::ln();
