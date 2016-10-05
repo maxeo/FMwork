@@ -5,9 +5,9 @@
             </header>
             <ul class="statistics no_margin_bot">
                 <li class="style1">
-                    <a class="to_target" href="#proj_mfwork">
+                    <a class="to_target" href="#proj_webframe">
                         <span class="icon fa-cogs"></span>
-                        <strong>MFwork</strong> Framework in php
+                        <strong>WebFrame</strong> Framework in php
                     </a>
                 </li>
                 <li class="style2">
@@ -69,8 +69,8 @@
 
             </ul>
             <p class="content">Durante il corso delle mie attività ho creato alcuni programmi alcuni dei quali posso condividere il loro funzionamento con il lettore. Alcuni di essi sono completi, mentre altri ho deciso di limitare le loro funzioni per ragioni di sicurezza, se mi contattate potrò illustrarvi le funzioni più "potenti", ma che data la loro forza possono arrecare danno se sfruttati male.</p>
-            <p class="justify" id="proj_mfwork">
-                <span class="titleProj"><a target="_blank" class="no_borderB" href="https://github.com/maxeo/FMwork">MFwork:</a></span>
+            <p class="justify" id="proj_webframe">
+                <span class="titleProj"><a target="_blank" class="no_borderB" href="https://github.com/maxeo/WebFrame">WebFrame:</a></span>
                 This is the framework in which this website is done. I started writing for my own, I recently opened the project on <a href="https://github.com/maxeo">Github</a>. It use the standard interface <b>Control Model View</b> by dividing the <b>View</b> in two parts: the "<b>Bone</b>" and "<b>Skin</b>". The first that deals with giving the structure of the page, the second contains the graphical elements that compose it.<br>
                 <a class="to_target" href="#headerTarget">Torna su</a></p>
             <p class="justify" id="proj_ifollettidelbosco">

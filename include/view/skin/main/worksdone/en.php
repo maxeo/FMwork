@@ -5,9 +5,9 @@
             </header>
             <ul class="statistics">
                 <li class="style1">
-                    <a href="https://github.com/maxeo/FMwork" target="_blank">
+                    <a href="https://github.com/maxeo/WebFrame" target="_blank">
                         <span class="icon fa-cogs"></span>
-                        <strong>MFwork</strong> Framework in php
+                        <strong>WebFrame</strong> Framework in php
                     </a>
                 </li>
                 <li class="style2">
