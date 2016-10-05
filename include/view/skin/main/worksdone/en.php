@@ -35,7 +35,6 @@
                     </a>
                 </li>
             </ul>
-            
             <p class="content">During the course of my career I have created some programs some of which I can share their work with you. Some of them are complete, while others have I decided to limit their functions for reasons of security, if you contact me I can show you the most "powerful features", but given their strength can be harmful if exploited badly</p>
             <footer class="major">
                 <ul class="actions">

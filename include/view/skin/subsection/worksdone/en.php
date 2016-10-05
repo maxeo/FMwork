@@ -68,7 +68,7 @@
                 </li>
 
             </ul>
-            <p class="content">Durante il corso delle mie attività ho creato alcuni programmi alcuni dei quali posso condividere il loro funzionamento con il lettore. Alcuni di essi sono completi, mentre altri ho deciso di limitare le loro funzioni per ragioni di sicurezza, se mi contattate potrò illustrarvi le funzioni più "potenti", ma che data la loro forza possono arrecare danno se sfruttati male.</p>
+            <p class="content">During the course of my career I have created some programs some of which I can share their work with you. Some of them are complete, while others have I decided to limit their functions for reasons of security, if you contact me I can show you the most "powerful features", but given their strength can be harmful if exploited badly</p>
             <p class="justify" id="proj_webframe">
                 <span class="titleProj"><a target="_blank" class="no_borderB" href="https://github.com/maxeo/WebFrame">WebFrame:</a></span>
                 This is the framework in which this website is done. I started writing for my own, I recently opened the project on <a href="https://github.com/maxeo">Github</a>. It use the standard interface <b>Control Model View</b> by dividing the <b>View</b> in two parts: the "<b>Bone</b>" and "<b>Skin</b>". The first that deals with giving the structure of the page, the second contains the graphical elements that compose it.<br>
