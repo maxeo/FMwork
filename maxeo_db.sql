@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Set 30, 2016 alle 12:05
+-- Creato il: Ott 05, 2016 alle 23:40
 -- Versione del server: 5.7.11
 -- Versione PHP: 5.6.19
 
@@ -99,14 +99,6 @@ CREATE TABLE `connections` (
   `time_connection` datetime NOT NULL,
   `captcha_key` varchar(6) CHARACTER SET ascii COLLATE ascii_bin NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Dump dei dati per la tabella `connections`
---
-
-INSERT INTO `connections` (`ID`, `IDuser`, `keyConnection`, `clientIP`, `first_connection`, `lang`, `browser_info`, `time_connection`, `captcha_key`) VALUES
-(1, 0, 'M0n7ttMEJLqnaXS44vm84zR2ud0pDbiNil3Vb0sF0Sin10VKBYaRMbrbgem3BAFe', '127.0.0.1', 'fmwork', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-09-30 10:52:34', ''),
-(2, 0, 'PotJHsXZq9CbkbCiHtPp0tjo5VezJTspIhvEFdEm7b5gsw7FUFketxJujrJx4HDf', '127.0.0.1', 'fmwork', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-09-30 11:05:09', '');
 
 -- --------------------------------------------------------
 
@@ -236,30 +228,31 @@ CREATE TABLE `pages` (
   `type_page` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
   `path` varchar(512) COLLATE utf8_unicode_ci NOT NULL,
   `terget_page` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `lang` varchar(2) CHARACTER SET armscii8 COLLATE armscii8_bin NOT NULL
+  `lang` varchar(2) CHARACTER SET armscii8 COLLATE armscii8_bin NOT NULL,
+  `metadescription` tinytext COLLATE utf8_unicode_ci
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dump dei dati per la tabella `pages`
 --
 
-INSERT INTO `pages` (`ID`, `name`, `type_page`, `path`, `terget_page`, `lang`) VALUES
-(6, '', 'view', 'include/view/bone/home/index.php', 'home', 'it'),
-(2, 'login/do', 'controller', 'include/controller/registrtion_and_login/login.php', NULL, '*'),
-(3, 'captcha.png', 'controller', 'include/controller/captcha.php', NULL, '*'),
-(8, 'su-di-me', 'view', 'include/view/bone/subsection/about_me.php', 'about-me', 'it'),
-(1, 'registrazione/do', 'controller', 'include/controller/registrtion_and_login/registration.php', NULL, '*'),
-(4, 'logout', 'controller', 'include/controller/registrtion_and_login/logout.php', NULL, '*'),
-(5, 'server/upload_files', 'controller', 'include/controller/file_manager/manager.php', NULL, '*'),
-(9, 'about-me', 'view', 'include/view/bone/subsection/about_me.php', 'about-me', 'en'),
-(7, '', 'view', 'include/view/bone/home/index.php', 'home', 'en'),
-(10, 'skills', 'view', 'include/view/bone/subsection/skills.php', 'skills', 'en'),
-(11, 'competenze', 'view', 'include/view/bone/subsection/skills.php', 'skills', 'it'),
-(12, 'lavori-svolti', 'view', 'include/view/bone/subsection/worksdone.php', 'worksdone', 'it'),
-(13, 'works-done', 'view', 'include/view/bone/subsection/worksdone.php', 'worksdone', 'en'),
-(14, 'sandMail', 'controller', 'include/controller/fast_contact.php', NULL, '*'),
-(15, 'comunicazione', 'view', 'include/view/bone/report/message.php', 'report', 'it'),
-(16, 'report', 'view', 'include/view/bone/report/message.php', 'report', 'en');
+INSERT INTO `pages` (`ID`, `name`, `type_page`, `path`, `terget_page`, `lang`, `metadescription`) VALUES
+(6, '', 'view', 'include/view/bone/home/index.php', 'home', 'it', 'Matteo Burbui, consulente informatico e programmatore web, si occupa della creazione di programmi per aziende scritti in HTML5 secondo le nuove linee guida promosse dal w3c.'),
+(2, 'login/do', 'controller', 'include/controller/registrtion_and_login/login.php', NULL, '*', NULL),
+(3, 'captcha.png', 'controller', 'include/controller/captcha.php', NULL, '*', NULL),
+(8, 'su-di-me', 'view', 'include/view/bone/subsection/about_me.php', 'about-me', 'it', NULL),
+(1, 'registrazione/do', 'controller', 'include/controller/registrtion_and_login/registration.php', NULL, '*', NULL),
+(4, 'logout', 'controller', 'include/controller/registrtion_and_login/logout.php', NULL, '*', NULL),
+(5, 'server/upload_files', 'controller', 'include/controller/file_manager/manager.php', NULL, '*', NULL),
+(9, 'about-me', 'view', 'include/view/bone/subsection/about_me.php', 'about-me', 'en', NULL),
+(7, '', 'view', 'include/view/bone/home/index.php', 'home', 'en', NULL),
+(10, 'skills', 'view', 'include/view/bone/subsection/skills.php', 'skills', 'en', NULL),
+(11, 'competenze', 'view', 'include/view/bone/subsection/skills.php', 'skills', 'it', NULL),
+(12, 'lavori-svolti', 'view', 'include/view/bone/subsection/worksdone.php', 'worksdone', 'it', NULL),
+(13, 'works-done', 'view', 'include/view/bone/subsection/worksdone.php', 'worksdone', 'en', NULL),
+(14, 'sandMail', 'controller', 'include/controller/fast_contact.php', NULL, '*', NULL),
+(15, 'comunicazione', 'view', 'include/view/bone/report/message.php', 'report', 'it', NULL),
+(16, 'report', 'view', 'include/view/bone/report/message.php', 'report', 'en', NULL);
 
 -- --------------------------------------------------------
 
@@ -407,7 +400,7 @@ ALTER TABLE `chat`
 -- AUTO_INCREMENT per la tabella `connections`
 --
 ALTER TABLE `connections`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT per la tabella `files_list`
 --
