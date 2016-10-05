@@ -1,6 +1,6 @@
 					<nav id="nav">
 						<ul>
-							<li><a class="nav_section"  href="<?php echo Pageloader::pageFromTarget("home", false,"en");  ?>" class="active">Home</a></li>
+							<li><a class="nav_section"  href="<?php echo Pageloader::pageFromTarget("home", false,"en");  ?>">Home</a></li>
                                                         <li><a class="nav_section" href="<?php echo Pageloader::pageFromTarget("about-me", false,"en");  ?>">Introduction</a></li>
 							<li><a class="nav_section" href="<?php echo Pageloader::pageFromTarget("skills", false,"en");  ?>">Skills</a></li>
 							<li><a class="nav_section" href="<?php echo Pageloader::pageFromTarget("worksdone", false,"en");  ?>">Works Done</a></li>
