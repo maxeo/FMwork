@@ -27,5 +27,5 @@
                 <li><a href="https://github.com/maxeo" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
             </ul>
         </section>
-        <p class="copyright">&copy; Maxeo.it. Design: <a href="https://html5up.net">HTML5 UP</a> and <a href="http://maxeo.it">Maxeo</a> Animation: <a href="http://maxeo.it">Maxeo</a>.</p>
+        <p class="copyright">&copy; Maxeo.it. Design: <a href="https://html5up.net">HTML5 UP</a> and <a href="http://maxeo.it">Maxeo</a>. Animations: <a href="http://maxeo.it">Maxeo</a>.</p>
     </footer>
