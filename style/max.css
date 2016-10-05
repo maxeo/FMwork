@@ -7,6 +7,18 @@
     height: 0;
     overflow: visible;
 }
+.footer_menu{
+    display: none;
+}
+.footer_menu ul{
+    list-style: outside none none;
+}
+
+.footer_menu ul li a{
+    border: 0;
+    font-size: 18px;
+    font-weight: normal;
+}
 .rollinglogo img{
     transition: all 4s ease 0s;
     height: 213px;
@@ -117,6 +129,9 @@ ul.statistics li strong{
     }
     ul.statistics li strong{
         font-size: 45px;
+    }
+    .footer_menu{
+        display: block;
     }
 }
 /***          Footer         ***/
