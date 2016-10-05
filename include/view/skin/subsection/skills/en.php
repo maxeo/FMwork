@@ -30,7 +30,7 @@
                     <div class="progress">
                         <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
                             <circle class="progress-circle-back" cx="80" cy="80" r="74"></circle>
-                            <circle class="progress-circle-prog" data-perc="75"data-color="8cc9f0" cx="80" cy="80" r="74"></circle>
+                            <circle class="progress-circle-prog" data-perc="75" data-color="8cc9f0" cx="80" cy="80" r="74"></circle>
                         </svg>
                         <div class="progress-text" data-progress="0">75%</div>
                     </div>	
@@ -98,7 +98,7 @@
                     <div class="progress">
                         <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
                             <circle class="progress-circle-back" cx="80" cy="80" r="74"></circle>
-                            <circle class="progress-circle-prog" data-perc="65"data-color="5257FF" cx="80" cy="80" r="74"></circle>
+                            <circle class="progress-circle-prog" data-perc="65" data-color="5257FF" cx="80" cy="80" r="74"></circle>
                         </svg>
                         <div class="progress-text" data-progress="0">70%</div>
                     </div>	
