@@ -94,12 +94,14 @@ class Pageloader {
         $res = $dbCon->selection($query, array(':name' => $page, ':lang' => $lang));
         if (!empty($res)) {
             self::$data['target'] = $res['terget_page'];
+            self::$data['metadescription'] = $res['metadescription'];
             return $res['path'];
         } else {
             $query = "SELECT * FROM `pages` WHERE `name` = :name AND `lang` = :lang";
             $res = $dbCon->selection($query, array(':name' => $page, ':lang' => "*"));
             if (!empty($res)) {
                 self::$data['target'] = $res['terget_page'];
+                self::$data['metadescription'] = $res['metadescription'];
                 return $res['path'];
             } else
                 return false;
@@ -171,12 +173,14 @@ class Pageloader {
         $res = $dbCon->selection($query, array(':targetName' => $home, ':lang' => self::getData("lang")));
         if ($res) {
             self::$data['target'] = $home;
+            self::$data['metadescription'] = $res['metadescription'];
             self::include_clean($res['path']);
             return true;
         } else {
             $res = $dbCon->selection($query, array(':targetName' => $home, ':lang' => "*"));
             if ($res) {
                 self::$data['target'] = $home;
+                self::$data['metadescription'] = $res['metadescription'];
                 self::include_clean($res['path']);
                 return true;
             }
@@ -285,7 +289,7 @@ class Pageloader {
 
     public static function getData($type) {
         $data = self::$data;
-        if ($type === 'target'){
+        if ($type === 'target' || $type === 'metadescription'){
             return $data[$type];
         }
         elseif ($type !== 'lang' && $type !== 'page') {
