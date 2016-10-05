@@ -12,6 +12,11 @@
             $seo_alternate_href = Pageloader::pageFromTarget(Pageloader::getData("target"), false, $seo_alternate_lang);
             if (!empty(Pageloader::getData(0)))
                 $seo_alternate_href.="/" . Pageloader::getData(0);
+            
+            if (@explode("/", $_SERVER['REQUEST_URI'])[1] != Pageloader::getData("lang")){
+                $seo_alternate_href="/";
+                $seo_alternate_lang= "x-default";
+            }
         ?>
         <link rel="alternate" href="<?php echo $seo_alternate_href; ?>" hreflang="<?php echo $seo_alternate_lang; ?>" type=text/html>
         <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
