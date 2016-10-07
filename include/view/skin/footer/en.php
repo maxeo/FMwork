@@ -31,7 +31,7 @@
                     <dd><a href="tel:+393920560787">(0039) 392-0560787</a></dd>
                 </address>
                 <dt>Email</dt>
-                <dd class="mailBoxm"><a href="#" class="mailBoxm"></a><img src="/imgs/infomail.png"></dd>
+                <dd class="mailBoxm"><a href="#" class="mailBoxm"></a><img alt="mail" src="/imgs/infomail.png"></dd>
             </dl>
             <ul class="icons">
                 <li><a href="https://fb.com/maxeo90" class="icon fa-facebook alt"><span class="label">Facebook</span></a></li>
