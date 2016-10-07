@@ -40,15 +40,17 @@ php_value upload_max_filesize 512M
 php_value post_max_size 512M
 php_value memory_limit 512M
 
-AddType image/svg+xml .svg
 
-ExpiresActive on
+<ifmodule mod_expires.c>
+	AddType image/svg+xml .svg
+	ExpiresActive on
 
-ExpiresByType image/png "access plus 1 month"
-ExpiresByType image/gif "access plus 1 month"
-ExpiresByType image/jpeg "access plus 1 month"
-ExpiresByType image/jpg "access plus 1 month"
-ExpiresByType image/svg+xml "access plus 1 month"
+	ExpiresByType image/png "access plus 1 month"
+	ExpiresByType image/gif "access plus 1 month"
+	ExpiresByType image/jpeg "access plus 1 month"
+	ExpiresByType image/jpg "access plus 1 month"
+	ExpiresByType image/svg+xml "access plus 1 month"
+</ifmodule>
 
 #ErrorDocument 403 include/template/E_403.htm
 #ErrorDocument 404 include/template/E_404.htm

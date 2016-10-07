@@ -4,6 +4,24 @@
                     <header class="major">
                         <h2>About me...</h2>
                     </header>
+                    <script type="application/ld+json">
+                        {
+                        "@context": "http://schema.org",
+                        "@type": "Person",
+                        "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "San Giovanni Valdarno",
+                        "addressRegion": "AR",
+                        "postalCode": "52027",
+                        "streetAddress": "7 Via Concetto Marchesi, San Giovanni Valdarno, AREZZO 52027, ITALY"
+                        },
+                        "image": "/imgs/me.jpg",
+                        "jobTitle": "Consulent",
+                        "name": "Matteo Burbui",
+                        "telephone": "(0039) 392-0560787",
+                        "url": "http://www.maxeo.it"
+                        }
+                    </script>
                     <p>
                         My name is Matteo Burbui, I was born in Figline Valdarno August 17, 1990. At the moment I live in San Giovanni Valdarno.<br>
                         In high school I studied pedagogy, but it wasn't my way, so during the school time I studied <b>HTML</b>, <b>PHP</b> and <b>JavaScript</b>.
