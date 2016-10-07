@@ -1,9 +1,9 @@
-        <section id="presentazione" class="main">
+        <section id="presentazione" class="main special">
+            <header class="major" id="headerTarget">
+                <h1>Su di me...</h1>
+            </header>
             <div class="spotlight">
                 <div class="content">
-                    <header class="major">
-                        <h2>Su di me...</h2>
-                    </header>
                     <script type="application/ld+json">
                         {
                         "@context": "http://schema.org",

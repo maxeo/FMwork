@@ -1,6 +1,6 @@
         <section id="lavorisvolti" class="main special">
             <header class="major" id="headerTarget">
-                <h2>Lavori Svolti</h2>
+                <h1>Lavori Svolti</h1>
                 <p>Qui sotto è possibile trovare alcuni dei programmi che ho creato nel corso del tempo</p>
             </header>
             <ul class="statistics no_margin_bot">

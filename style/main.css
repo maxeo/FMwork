@@ -2681,8 +2681,20 @@ header.major h2:after {
     margin: 0.7em 0 1em 0;
     border-radius: 2px;
 }
+header.major h1:after {
+    display: block;
+    content: '';
+    width: 3.25em;
+    height: 2px;
+    margin: 0.7em 0 1em 0;
+    border-radius: 2px;
+}
 
 section.special header.major h2:after, article.special header.major h2:after {
+    margin-left: auto;
+    margin-right: auto;
+}
+section.special header.major h1:after, article.special header.major h1:after {
     margin-left: auto;
     margin-right: auto;
 }
@@ -2731,6 +2743,9 @@ footer.major {
 }
 
 header.major h2:after {
+    background-color: rgba(255, 255, 255, 0.35);
+}
+header.major h1:after {
     background-color: rgba(255, 255, 255, 0.35);
 }
 
@@ -3580,6 +3595,13 @@ body.is-loading #header.alt .logo {
 }
 
 #main header.major h2:after {
+    background-color: #dddddd;
+    background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+    background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+    background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+    background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+}
+#main header.major h1:after {
     background-color: #dddddd;
     background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
     background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);

@@ -1,6 +1,6 @@
         <section id="skills" class="main special">
             <header class="major">
-                <h2>Skills</h2>
+                <h1>Skills</h1>
             </header>
             <ul class="features">
                 <li>

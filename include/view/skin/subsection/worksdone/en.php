@@ -1,6 +1,6 @@
         <section id="worksdone" class="main special">
             <header class="major" id="headerTarget">
-                <h2>Works Done</h2>
+                <h1>Works Done</h1>
                 <p>Below you can find some of the programs that I made over time</p>
             </header>
             <ul class="statistics no_margin_bot">
