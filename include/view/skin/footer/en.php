@@ -1,6 +1,6 @@
     <footer id="footer">
-        <h2>Menu</h2>
         <section class="footer_menu">
+            <h2>Menu</h2>
             <ul>
             <li><a href="<?php echo Pageloader::pageFromTarget("home", false, "en"); ?>">Home</a></li>
             <li><a href="<?php echo Pageloader::pageFromTarget("about-me", false, "en"); ?>">Introduction</a></li>
