@@ -14,3 +14,5 @@ All'interno del progetto sono disponibili le seguenti classi:
 
 ### Captcha
 La classe si occupa di gestire e creare i captcha. I dati per il settaggio sono presi dalla variabile globale `$settings`.
+
+`[...]`
