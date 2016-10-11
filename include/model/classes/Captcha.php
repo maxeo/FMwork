@@ -18,7 +18,6 @@ class Captcha {
 		}
 		
 	}
-	
 	public static function generate(){
 		$key=self::update();
 		if($key){
