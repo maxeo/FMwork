@@ -103,7 +103,7 @@
                         <div class="progress-text" data-progress="0">70%</div>
                     </div>	
                     <h3>Lingua Inglese</h3>
-                    <p>Linguaggio della rete, fondamentale per programmare qunto relazionarsi con il resto del mondo.</p>
+                    <p>Linguaggio della rete, fondamentale per programmare quanto relazionarsi con il resto del mondo.</p>
                 </li>
 
             </ul>

@@ -71,7 +71,7 @@
             <p class="content">Durante il corso delle mie attività ho creato alcuni programmi alcuni dei quali posso condividere il loro funzionamento con il lettore. Alcuni di essi sono completi, mentre altri ho deciso di limitare le loro funzioni per ragioni di sicurezza, se mi contattate potrò illustrarvi le funzioni più "potenti", ma che data la loro forza possono arrecare danno se sfruttati male.</p>
             <p class="justify" id="proj_webframe">
                 <span class="titleProj"><a target="_blank" class="no_borderB" href="https://github.com/maxeo/WebFrame">WebFrame:</a></span>
-                Si tratta del framework con cui è fatto quest il sito internet. Avevo iniziato a scriverlo autonomamente per conto mio, di recente ho aperto il progetto su <a href="https://github.com/maxeo">Github</a>. Usa l'interfaccia standard <b>Control Model View</b> dividento a sua volta la <b>View</b> in due parti "<b>Bone</b>" e "<b>Skin</b>": la prima che si occupa di dare la struttura della pagina, la seconda contiene gli elementi grafici che la compongono.<br>
+                Si tratta del framework con cui è fatto questo il sito internet. Avevo iniziato a scriverlo autonomamente per conto mio, di recente ho aperto il progetto su <a href="https://github.com/maxeo">Github</a>. Usa l'interfaccia standard <b>Control Model View</b> dividendo a sua volta la <b>View</b> in due parti "<b>Bone</b>" e "<b>Skin</b>": la prima che si occupa di dare la struttura della pagina, la seconda contiene gli elementi grafici che la compongono.<br>
                 <a class="to_target" href="#headerTarget">Torna su</a></p>
             <p class="justify" id="proj_ifollettidelbosco">
                 <span class="titleProj"><a target="_blank" class="no_borderB" href="http://www.ifollettidelbosco.it">I Folletti del Bosco:</a></span>
@@ -80,11 +80,11 @@
             <p class="justify" id="proj_mycloud">
                 <span class="titleProj"><a target="_blank" class="no_borderB" href="http://cloud.demo.maxeo.it/">MyCloud</a></span>
                 Un piccolo file manager scritto in php lo creai a suo tempo, è molto potente, ma, dato che ero l'unico ad usarlo ho un po' trascurato l'aspetto sicurezza...<br>
-                La vesione demo presente è solo una parte del programma. Prima o poi ne creerò una versione 2.0 alla portata di tutti<br>
+                La versione demo presente è solo una parte del programma. Prima o poi ne creerò una versione 2.0 alla portata di tutti<br>
                 <a class="to_target" href="#headerTarget">Torna su</a></p>
             <p class="justify" id="proj_braingame">
                 <span class="titleProj"><a target="_blank" class="no_borderB" href="http://braingame.demo.maxeo.it/">BrainGame:</a></span>
-                Simpatico giochino che ho creato durante i viaggi in treno all'università. Uno imposta la difficoltà, il tempo e <i>tira le somme</i>, ma anche le moltiplicazioni; è disponibile anche una versione <i>Timemode</i> dove in caso di risposta corretta viene dato tempo extra. <br>
+                Simpatico giochino che ho creato durante i viaggi in treno all'università. Imposta la difficoltà, il tempo e <i>tira le somme</i>, ma anche le moltiplicazioni; è disponibile anche una versione <i>Timemode</i> dove in caso di risposta corretta viene dato tempo extra. <br>
                 <a class="to_target" href="#headerTarget">Torna su</a></p>
             <p class="justify" id="proj_produzioneoga">
                 <span class="titleProj"><a target="_blank" class="no_borderB" href="http://produzioneoga.demo.maxeo.it/">Produzione OGA:</a></span>
@@ -92,7 +92,7 @@
                 <a class="to_target" href="#headerTarget">Torna su</a></p>
             <p class="justify" id="proj_quantificaetichette">
                 <span class="titleProj"><a target="_blank" class="no_borderB" href="http://quantificaetichette.demo.maxeo.it/">Quantifica Etichette:</a></span>
-                Per scusarmi per sopra ecco una versione <i>"completa"</i> di una piccola utility, anchessa realizzata mentre lavoravo in tipografia.<br>
+                Per scusarmi per sopra ecco una versione <i>"completa"</i> di una piccola utility, anch'essa realizzata mentre lavoravo in tipografia.<br>
                 <a class="to_target" href="#headerTarget">Torna su</a></p>
             <p class="justify" id="proj_masterkanjiitaly">
                 <span class="titleProj"><a target="_blank" class="no_borderB" href="http://masterkanji.altervista.org/">Master Kanji Italy:</a></span>
