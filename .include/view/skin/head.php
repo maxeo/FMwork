@@ -51,7 +51,7 @@
     <meta property="og:title" content="<?php echo $pageTitle; ?>">
     <meta property="og:url" content="http://www.maxeo.it">
     <meta property="og:image" content="/imgs/me.jpg">
-    <meta property="og:site_name" content="Seo Tester Online">
+    <meta property="og:site_name" content="Matteo Burbui - Maxeo.it">
     <link rel="alternate" href="<?php echo $seo_alternate_href; ?>" hreflang="<?php echo $seo_alternate_lang; ?>" type=text/html>
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <script src="/scripts/analytics.js" type="text/javascript"></script>
