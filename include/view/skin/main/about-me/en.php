@@ -23,9 +23,10 @@
                         }
                     </script>
                     <p>
-                        My name is Matteo Burbui, I was born in Figline Valdarno August 17, 1990. At the moment I live in San Giovanni Valdarno.<br>
-                        In high school I studied pedagogy, but it wasn't my way, so during the school time I studied <b>HTML</b>, <b>PHP</b> and <b>JavaScript</b>.
-                        I worked as a typesetter for the label manufacturer <a href="http://www.ogasrl.it/"><b>Oga</b></a> for three years, and here I made some little programs for the company like custom calculators, work diary or utility.<br>
+                        My name is Matteo Burbui, I was born in Figline Valdarno August 17, 1990. Currently I'm living in San Giovanni Valdarno, a small town near Florence.<br>During the high school I've studied pedagogy,
+                        but suddenly I've realised that discipline wouldn't be my future; so, after the school time, I've been studying <b>HTML</b>, <b>PHP</b> and <b>JavaScript</b>. In 2010 I've started my cooperation
+                        with <a href="http://www.ogasrl.it/"><b>Oga</b></a> manufacturer, as a typesetter, for three years: during this time I've created some useful programs for the company, like custom calculators,
+                        work diary or utility.
                     </p>
                     <ul class="actions">
                         <li><a href="<?php echo Pageloader::pageFromTarget("about-me", false, "en"); ?>" class="button">Read More</a></li>

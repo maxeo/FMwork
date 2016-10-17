@@ -35,7 +35,7 @@
                     </a>
                 </li>
             </ul>
-            <p class="content">Durante il corso delle mie attività ho creato alcuni programmi alcuni dei quali posso condividere il loro funzionamento con il lettore. Alcuni di essi sono completi, mentre altri ho deciso di limitare le loro funzioni per ragioni di sicurezza, se mi contattate potrò illustrarvi le funzioni più "potenti", ma che data la loro forza possono arrecare danno se sfruttati male.</p>
+            <p class="content">Durante il corso delle mie attività ho creato molti programmi alcuni dei quali posso condividere il loro funzionamento con il lettore. Alcuni di essi sono completi, mentre altri ho deciso di limitare le loro funzioni per ragioni di sicurezza, se mi contattate potrò illustrarvi le funzioni più "potenti", ma che data la loro forza possono arrecare danno se sfruttati male.</p>
             <footer class="major">
                 <ul class="actions">
                     <li><a href="<?php echo Pageloader::pageFromTarget("worksdone", false, "it"); ?>" class="button">Leggi Ancora</a></li>

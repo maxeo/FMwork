@@ -68,23 +68,28 @@
                 </li>
 
             </ul>
-            <p class="content">Durante il corso delle mie attività ho creato alcuni programmi alcuni dei quali posso condividere il loro funzionamento con il lettore. Alcuni di essi sono completi, mentre altri ho deciso di limitare le loro funzioni per ragioni di sicurezza, se mi contattate potrò illustrarvi le funzioni più "potenti", ma che data la loro forza possono arrecare danno se sfruttati male.</p>
+            <p class="content">Durante il corso delle mie attività ho creato molti programmi alcuni dei quali posso condividere il loro funzionamento con il lettore. Alcuni di essi sono completi, mentre altri ho deciso di limitare le loro funzioni per ragioni di sicurezza, se mi contattate potrò illustrarvi le funzioni più "potenti", ma che data la loro forza possono arrecare danno se sfruttati male.</p>
             <p class="justify" id="proj_webframe">
                 <span class="titleProj"><a target="_blank" class="no_borderB" href="https://github.com/maxeo/WebFrame">WebFrame:</a></span>
-                Si tratta del framework con cui è fatto questo il sito internet. Avevo iniziato a scriverlo autonomamente per conto mio, di recente ho aperto il progetto su <a href="https://github.com/maxeo">Github</a>. Usa l'interfaccia standard <b>Control Model View</b> dividendo a sua volta la <b>View</b> in due parti "<b>Bone</b>" e "<b>Skin</b>": la prima che si occupa di dare la struttura della pagina, la seconda contiene gli elementi grafici che la compongono.<br>
+                Si tratta del framework con cui è fatto questo il sito internet. Avevo iniziato a scriverlo autonomamente per conto mio, di recente ho aperto il progetto su <a href="https://github.com/maxeo">Github</a>.
+                Usa il pattern standard <b>Control Model View</b> dividendo a sua volta la <b>View</b> in due parti "<b>Bone</b>" e "<b>Skin</b>": la prima che si occupa di dare la struttura della pagina, la seconda
+                contiene gli elementi grafici che la compongono.
                 <a class="to_target" href="#headerTarget">Torna su</a></p>
             <p class="justify" id="proj_ifollettidelbosco">
                 <span class="titleProj"><a target="_blank" class="no_borderB" href="http://www.ifollettidelbosco.it">I Folletti del Bosco:</a></span>
-                Il sito web dell'Asilo omonimo è stato creato nel 2014. Il passaggio tra una pagina all'altra avviene in modo morbido attraverso richieste ajax, nonostante tutto l'url cambia in modo tale da sembrare il passaggio da una pagina all'altra tramite l'evento <a href="https://developer.mozilla.org/en-US/docs/Web/API/History_API">"PushState"</a> di javascript. Vi è inoltre un area riservata, dove, tramite una password è possibile scaricare vari contenuti.<br>
+                Il sito web dell'Asilo omonimo è stato creato nel 2014. Il passaggio tra una pagina all'altra avviene in modo morbido attraverso richieste ajax, nonostante tutto l'url cambia in modo tale da simulare il
+                passaggio da una pagina all'altra tramite l'evento <a href="https://developer.mozilla.org/en-US/docs/Web/API/History_API">"PushState"</a> di javascript. Vi è inoltre un area riservata, dove, tramite una
+                password è possibile scaricare vari contenuti.
                 <a class="to_target" href="#headerTarget">Torna su</a></p>
             <p class="justify" id="proj_mycloud">
                 <span class="titleProj"><a target="_blank" class="no_borderB" href="http://cloud.demo.maxeo.it/">MyCloud</a></span>
                 Un piccolo file manager scritto in php lo creai a suo tempo, è molto potente, ma, dato che ero l'unico ad usarlo ho un po' trascurato l'aspetto sicurezza...<br>
-                La versione demo presente è solo una parte del programma. Prima o poi ne creerò una versione 2.0 alla portata di tutti<br>
+                La versione demo presente è solo una parte del programma. Prima o poi rilascerò una versione 2.0 alla portata di tutti.
                 <a class="to_target" href="#headerTarget">Torna su</a></p>
             <p class="justify" id="proj_braingame">
                 <span class="titleProj"><a target="_blank" class="no_borderB" href="http://braingame.demo.maxeo.it/">BrainGame:</a></span>
-                Simpatico giochino che ho creato durante i viaggi in treno all'università. Imposta la difficoltà, il tempo e <i>tira le somme</i>, ma anche le moltiplicazioni; è disponibile anche una versione <i>Timemode</i> dove in caso di risposta corretta viene dato tempo extra. <br>
+                Simpatico giochino che ho creato durante i viaggi in treno all'università. Imposta la difficoltà, il tempo e <i>tira le somme</i>, ma anche le moltiplicazioni; è disponibile anche una versione
+                <i>Timemode</i> dove in caso di risposta corretta viene dato tempo extra.
                 <a class="to_target" href="#headerTarget">Torna su</a></p>
             <p class="justify" id="proj_produzioneoga">
                 <span class="titleProj"><a target="_blank" class="no_borderB" href="http://produzioneoga.demo.maxeo.it/">Produzione OGA:</a></span>
@@ -92,7 +97,7 @@
                 <a class="to_target" href="#headerTarget">Torna su</a></p>
             <p class="justify" id="proj_quantificaetichette">
                 <span class="titleProj"><a target="_blank" class="no_borderB" href="http://quantificaetichette.demo.maxeo.it/">Quantifica Etichette:</a></span>
-                Per scusarmi per sopra ecco una versione <i>"completa"</i> di una piccola utility, anch'essa realizzata mentre lavoravo in tipografia.<br>
+                Si tratta di una versione completa di una piccola utility, realizzata durante il lavoro in tipografia.<br>
                 <a class="to_target" href="#headerTarget">Torna su</a></p>
             <p class="justify" id="proj_masterkanjiitaly">
                 <span class="titleProj"><a target="_blank" class="no_borderB" href="http://masterkanji.altervista.org/">Master Kanji Italy:</a></span>

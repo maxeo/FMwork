@@ -24,15 +24,18 @@
                     </script>
                     <p>
                         <span class="image maxPhoto"><img src="/imgs/me.jpg" alt="Matteo Burbui" title="Matteo Burbui"></span>
-                        Mi chiamo Matteo Burbui, sono nato a Figline Valdarno il 17 Agosto 1990. Al momento vivo a San Giovanni Valdarno.<br>
-                        Alle superiori ho frequentato il liceo socio-psico pedagogico, ma ho capito che non era la strada che faceva per me, così, durante il periodo scolastico, ho studiato <b>HTML</b>, <b>PHP</b> e <b>JavaScript</b>.<br>
-                        Ho lavorato come tipografo per l'etichettificio <a href="http://www.ogasrl.it/"><b>Oga</b></a> per tre anni, e qui ho fatto alcuni piccoli programmi per l'azienda come calcolatrici personalizzati, un diario di lavoro o altri programmi di utilità.<br>
-                        Nonostante avessi un buono stipendio e tutto sommato non me la passavo male, dopo tre anni, ho deciso di tornare a studiare, iniziai iscrivendomi ad ingegneria informatica.
-                        All'inizio facevo entrambe le cose: la mattina andavo a scuola e il pomeriggio tornavo a lavoro usando un po' per volta le ore di ferie. Passato il primo trimestre,
-                        dato che la mia richiesta di un'aspettativa mi è stata rifiutata, ho lasciato il lavoro. <br>
-                        L'anno seguente, dato che mia madre ha un asilo nido ed allora era un po' in difficoltà a causa di una maternità sono andato a lavorare da lei come educatore e responsabile amministrativo presso l'<a href="http://www.ifollettidelbosco.it/"><b>Asilo Nido I Folletti del Bosco</b></a>.<br>
+                        Mi chiamo Matteo Burbui, sono nato a Figline Valdarno il 17 Agosto 1990. Al momento vivo a San Giovanni Valdarno una piccola città vicino Firenze.<br>
+                        Alle superiori ho frequentato il liceo socio-psico pedagogico, ma ho capito che non era la strada che faceva per me, così, dopo il periodo scolastico, ho studiato <b>HTML</b>, <b>PHP</b> e
+                        <b>JavaScript</b>.<br>
+                        Ho lavorato come per l'etichettificio <a href="http://www.ogasrl.it/"><b>Oga</b></a> per tre anni: qui ho fatto alcuni utili&nbsp; programmi per l'azienda come calcolatrici personalizzati, un diario
+                        di lavoro o altri programmi di utilità.<br>
+                        Nonostante avessi un buono stipendio e tutto sommato non me la passavo male, dopo tre anni, ho deciso di tornare a studiare, ho iniziato iscrivendomi ad ingegneria informatica.
+                        All'inizio facevo entrambe le cose: la mattina andavo a scuola e il pomeriggio tornavo a lavoro usando un po' per volta le ore di ferie. Passato il primo trimestre del 2013, mi sono reso conto che
+                        avrei dovuto concentrarmi interamente sugli studui informatici, così, dato che il mio capo mi ha rifiutato la mia&nbsp; richiesta di un'aspettativa, ho lasciato il lavoro così che potessi dedicare il
+                        mio tempo e le mie risorse allo studio. <br>
+                        L'anno seguente ho lavorarato come educatore e responsabile amministrativo presso l'asilo di mia madre: <a href="http://www.ifollettidelbosco.it/"><b>I Folletti del Bosco</b></a>.<br>
                         Anche qui mi sono dato da fare in campo informatico, scrivendo il <a href="http://www.ifollettidelbosco.it/">sito dell'asilo</a> e ottimizzando un po' la parte SEO.<br>
-                        Finita la maternità all'asilo nido ho preso partita iva. Adesso lavoro come consulente informatico.
+                        Dopo questo periodo ho preso partita iva. Adesso lavoro come consulente informatico.
                     </p>
                 </div>
 
