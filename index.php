@@ -1,7 +1,7 @@
 <?php
 
 //$time_start = microtime(true); 
-ob_start("ob_gzhandler");
+//ob_start("ob_gzhandler");
 require_once("actions.php");
 $pageLoaded = Pageloader::includePageFromURL();
 
