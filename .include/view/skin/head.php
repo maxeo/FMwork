@@ -1,6 +1,11 @@
 <head>
-    <title><?php $thisPgTarget = Pageloader::getData("target");
-echo "Matteo Burbui - "; ?>Maxeo.it<?php if (!empty($thisPgTarget) && $thisPgTarget != "home") echo " - " . ucwords(str_replace("-", " ", Pageloader::getData("page"))); ?></title>
+    <title><?php
+        $thisPgTarget = Pageloader::getData("target");
+        $pageTitle = "Matteo Burbui - Maxeo.it";
+        if (!empty($thisPgTarget) && $thisPgTarget != "home")
+            $pageTitle.= " - " . ucwords(str_replace("-", " ", Pageloader::getData("page")));
+        echo $pageTitle;
+    ?></title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -37,8 +42,16 @@ echo "Matteo Burbui - "; ?>Maxeo.it<?php if (!empty($thisPgTarget) && $thisPgTar
         $seo_alternate_href = "/";
         $seo_alternate_lang = "x-default";
     }
-    if (Pageloader::getData("metadescription")) echo '<meta name="description" content="'.Pageloader::getData("metadescription").'">'."\n";
+    if (Pageloader::getData("metadescription")) {
+        echo '<meta name="description" content="' . Pageloader::getData("metadescription") . '">' . "\n";
+        echo '<meta property="og:description" content="' . Pageloader::getData("metadescription") . '">' . "\n";
+    }
     ?>
+    <meta property="og:type" content="site">
+    <meta property="og:title" content="<?php echo $pageTitle; ?>">
+    <meta property="og:url" content="http://www.maxeo.it">
+    <meta property="og:image" content="/imgs/me.jpg">
+    <meta property="og:site_name" content="Seo Tester Online">
     <link rel="alternate" href="<?php echo $seo_alternate_href; ?>" hreflang="<?php echo $seo_alternate_lang; ?>" type=text/html>
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <script src="/scripts/analytics.js" type="text/javascript"></script>

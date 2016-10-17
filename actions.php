@@ -28,12 +28,10 @@ if (isset($_SESSION['msg_log'])) {
 }
 
 //Azioni
-$error = array();      //errori
+$error = array();                //errori
 $settings = importSettings();    //vengono importati i settaggi
 
 Pageloader::load();
-
-
 
 $dbCon = new DBConnection();   //connette al db
 
@@ -44,9 +42,5 @@ if ($dbCon->isConnected()) {
         Connection::start($_COOKIE['CID'], $_COOKIE['CKEY'],@$_COOKIE['CLG']);
     else
         Connection::start();
-}/*
-  else
-  exit("Impossibile accedere al database");
-
- */
+}
 ?>
