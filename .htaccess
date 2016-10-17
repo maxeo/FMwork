@@ -1,7 +1,10 @@
 <Files ~ "^\.(htaccess|htpasswd)$">
 deny from all
 </Files>
+
+#mutare in produzione
 php_flag display_errors on
+
 Options -Indexes 
 order deny,allow
 
@@ -57,13 +60,13 @@ php_value memory_limit 512M
 
 RewriteEngine On
 
+#Reindirizzo da senza a www
+RewriteCond %{HTTP_HOST} ^maxeo.it [NC]
+RewriteRule (.*) http://www.maxeo.it/$1 [R=301,L]
+
 #base per le lingue
 RewriteRule ^it(/.*|$) index.php
 RewriteRule ^en(/.*|$) index.php
-
-#Pagine non raggiungibili
-RewriteRule ^_ include/view/other/template/E_403.htm
-RewriteRule ^include include/view/other/template/E_403.htm
 
 #Altre Basi
 RewriteRule img/captcha.png index.php
