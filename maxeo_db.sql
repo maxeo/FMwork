@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Ott 05, 2016 alle 23:40
+-- Creato il: Ott 17, 2016 alle 12:08
 -- Versione del server: 5.7.11
 -- Versione PHP: 5.6.19
 
@@ -99,6 +99,16 @@ CREATE TABLE `connections` (
   `time_connection` datetime NOT NULL,
   `captcha_key` varchar(6) CHARACTER SET ascii COLLATE ascii_bin NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dump dei dati per la tabella `connections`
+--
+
+INSERT INTO `connections` (`ID`, `IDuser`, `keyConnection`, `clientIP`, `first_connection`, `lang`, `browser_info`, `time_connection`, `captcha_key`) VALUES
+(1, 0, 'B2sCa7UWLOTLboGNqlcxY9BhSxvlrzED69W0H6rc3Q2vSUmdZWARYpQ2kSCpb91m', '127.0.0.1', 'webframe', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-10-07 13:23:09', ''),
+(2, 0, 'SDnQ0ZA7VEItvoFfUUL9ms7spAXg94QHGVsqHVwz7G8D4ULU1G3SmIIRH8e33mPq', '127.0.0.1', 'webframe', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-10-07 13:25:49', ''),
+(3, 0, 'TM2Y0rZ1c2fOOZuzE5K1SSV7yGUrpYcN4L4126oHrD2Qo7GZ6gIb5JERgWPm34H2', '127.0.0.1', 'webframe', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-10-07 13:35:30', ''),
+(4, 0, 'IL6MDSGHUtCG039Cpekp2AkN7QPo8ut4gfPctr9cb9MgzRZh26E9pS8BUo72ox5L', '127.0.0.1', 'webframe', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-10-17 11:21:04', '');
 
 -- --------------------------------------------------------
 
@@ -237,22 +247,22 @@ CREATE TABLE `pages` (
 --
 
 INSERT INTO `pages` (`ID`, `name`, `type_page`, `path`, `terget_page`, `lang`, `metadescription`) VALUES
-(6, '', 'view', 'include/view/bone/home/index.php', 'home', 'it', 'Matteo Burbui, consulente informatico e programmatore web, si occupa della creazione di programmi per aziende scritti in HTML5 secondo le nuove linee guida promosse dal w3c.'),
-(2, 'login/do', 'controller', 'include/controller/registrtion_and_login/login.php', NULL, '*', NULL),
-(3, 'captcha.png', 'controller', 'include/controller/captcha.php', NULL, '*', NULL),
-(8, 'su-di-me', 'view', 'include/view/bone/subsection/about_me.php', 'about-me', 'it', NULL),
-(1, 'registrazione/do', 'controller', 'include/controller/registrtion_and_login/registration.php', NULL, '*', NULL),
-(4, 'logout', 'controller', 'include/controller/registrtion_and_login/logout.php', NULL, '*', NULL),
-(5, 'server/upload_files', 'controller', 'include/controller/file_manager/manager.php', NULL, '*', NULL),
-(9, 'about-me', 'view', 'include/view/bone/subsection/about_me.php', 'about-me', 'en', NULL),
-(7, '', 'view', 'include/view/bone/home/index.php', 'home', 'en', NULL),
-(10, 'skills', 'view', 'include/view/bone/subsection/skills.php', 'skills', 'en', NULL),
-(11, 'competenze', 'view', 'include/view/bone/subsection/skills.php', 'skills', 'it', NULL),
-(12, 'lavori-svolti', 'view', 'include/view/bone/subsection/worksdone.php', 'worksdone', 'it', NULL),
-(13, 'works-done', 'view', 'include/view/bone/subsection/worksdone.php', 'worksdone', 'en', NULL),
-(14, 'sandMail', 'controller', 'include/controller/fast_contact.php', NULL, '*', NULL),
-(15, 'comunicazione', 'view', 'include/view/bone/report/message.php', 'report', 'it', NULL),
-(16, 'report', 'view', 'include/view/bone/report/message.php', 'report', 'en', NULL);
+(6, '', 'view', 'view/bone/home/index.php', 'home', 'it', 'Matteo Burbui, consulente informatico e programmatore web, si occupa della creazione di programmi per aziende scritti in HTML5 secondo le nuove linee guida promosse dal w3c.'),
+(2, 'login/do', 'controller', 'controller/registrtion_and_login/login.php', NULL, '*', NULL),
+(3, 'captcha.png', 'controller', 'controller/captcha.php', NULL, '*', NULL),
+(8, 'su-di-me', 'view', 'view/bone/subsection/about_me.php', 'about-me', 'it', NULL),
+(1, 'registrazione/do', 'controller', 'controller/registrtion_and_login/registration.php', NULL, '*', NULL),
+(4, 'logout', 'controller', 'controller/registrtion_and_login/logout.php', NULL, '*', NULL),
+(5, 'server/upload_files', 'controller', 'controller/file_manager/manager.php', NULL, '*', NULL),
+(9, 'about-me', 'view', 'view/bone/subsection/about_me.php', 'about-me', 'en', NULL),
+(7, '', 'view', 'view/bone/home/index.php', 'home', 'en', NULL),
+(10, 'skills', 'view', 'view/bone/subsection/skills.php', 'skills', 'en', NULL),
+(11, 'competenze', 'view', 'view/bone/subsection/skills.php', 'skills', 'it', NULL),
+(12, 'lavori-svolti', 'view', 'view/bone/subsection/worksdone.php', 'worksdone', 'it', NULL),
+(13, 'works-done', 'view', 'view/bone/subsection/worksdone.php', 'worksdone', 'en', NULL),
+(14, 'sandMail', 'controller', 'controller/fast_contact.php', NULL, '*', NULL),
+(15, 'comunicazione', 'view', 'view/bone/report/message.php', 'report', 'it', NULL),
+(16, 'report', 'view', 'view/bone/report/message.php', 'report', 'en', NULL);
 
 -- --------------------------------------------------------
 
@@ -400,7 +410,7 @@ ALTER TABLE `chat`
 -- AUTO_INCREMENT per la tabella `connections`
 --
 ALTER TABLE `connections`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT per la tabella `files_list`
 --
