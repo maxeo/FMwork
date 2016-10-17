@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Ott 17, 2016 alle 12:08
+-- Creato il: Ott 17, 2016 alle 13:36
 -- Versione del server: 5.7.11
 -- Versione PHP: 5.6.19
 
@@ -108,7 +108,9 @@ INSERT INTO `connections` (`ID`, `IDuser`, `keyConnection`, `clientIP`, `first_c
 (1, 0, 'B2sCa7UWLOTLboGNqlcxY9BhSxvlrzED69W0H6rc3Q2vSUmdZWARYpQ2kSCpb91m', '127.0.0.1', 'webframe', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-10-07 13:23:09', ''),
 (2, 0, 'SDnQ0ZA7VEItvoFfUUL9ms7spAXg94QHGVsqHVwz7G8D4ULU1G3SmIIRH8e33mPq', '127.0.0.1', 'webframe', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-10-07 13:25:49', ''),
 (3, 0, 'TM2Y0rZ1c2fOOZuzE5K1SSV7yGUrpYcN4L4126oHrD2Qo7GZ6gIb5JERgWPm34H2', '127.0.0.1', 'webframe', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-10-07 13:35:30', ''),
-(4, 0, 'IL6MDSGHUtCG039Cpekp2AkN7QPo8ut4gfPctr9cb9MgzRZh26E9pS8BUo72ox5L', '127.0.0.1', 'webframe', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-10-17 11:21:04', '');
+(4, 0, 'IL6MDSGHUtCG039Cpekp2AkN7QPo8ut4gfPctr9cb9MgzRZh26E9pS8BUo72ox5L', '127.0.0.1', 'webframe', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-10-17 11:21:04', ''),
+(5, 0, '6Nd2Vd1kwojsM4OykslvLyuCi9JntMxwohdvL1vFDStSLVp1BfeF76GrJVm2mOsU', '127.0.0.1', 'webframe', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-10-17 12:17:55', ''),
+(6, 0, 'HvkH5tO6ObhI9MIzotKIcrHF2Yt3x3mksOHgllXPWr0E70oS7Gba7CKVi2hxkP4X', '127.0.0.1', 'webframe', 'it', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', '2016-10-17 12:19:27', '');
 
 -- --------------------------------------------------------
 
@@ -293,7 +295,8 @@ INSERT INTO `page_elements` (`ID`, `name`, `path`) VALUES
 (3, 'tNav', 'nav/'),
 (12, 'tsWorksdone', 'subsection/worksdone/'),
 (11, 'tsSkills', 'subsection/skills/'),
-(13, 'tMessage', 'message/');
+(13, 'tMessage', 'message/'),
+(14, 'tFacebook_integration', 'facebook_integration/');
 
 -- --------------------------------------------------------
 
@@ -410,7 +413,7 @@ ALTER TABLE `chat`
 -- AUTO_INCREMENT per la tabella `connections`
 --
 ALTER TABLE `connections`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT per la tabella `files_list`
 --
@@ -440,7 +443,7 @@ ALTER TABLE `pages`
 -- AUTO_INCREMENT per la tabella `page_elements`
 --
 ALTER TABLE `page_elements`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT per la tabella `users`
 --

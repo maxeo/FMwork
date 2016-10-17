@@ -21,6 +21,8 @@ Pageloader::addElement("tMainSkills");
 Pageloader::ln();
 Pageloader::addElement("tMainWorksdone");
 Pageloader::ln();
+Pageloader::addElement("tFacebook_integration");
+Pageloader::ln();
 Pageloader::addTag(' div', NULL, 1, 0);
 Pageloader::ln();
 Pageloader::addElement("tFooter");
