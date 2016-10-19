@@ -93,7 +93,7 @@ $(document).ready(function () {
         }
         /***    Scorrimento nav vesioni Desktop       ***/
         var t1,t2,t3,t4;
-        if (t1=($(document).scrollTop() > $(".main").offset() - navHeight) && $("#main").height()+$(".main").offset().top<$(document).scrollTop()) {
+        if ($(document).scrollTop() > $(".main").offset().top - navHeight && $("#main").height()+$(".main").offset().top>$(document).scrollTop()+100) {
             $("#nav").css({
                 position: 'fixed',
                 top: 0,
