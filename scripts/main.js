@@ -92,8 +92,8 @@ $(document).ready(function () {
             }, 500);
         }
         /***    Scorrimento nav vesioni Desktop       ***/
-
-        if ($(document).scrollTop() > $(".main").offset().top - navHeight) {
+        var t1,t2,t3,t4;
+        if ($(document).scrollTop() > $(".main").offset().top - navHeight && $("#main").height()+$(".main").offset().top>$(document).scrollTop()+100) {
             $("#nav").css({
                 position: 'fixed',
                 top: 0,

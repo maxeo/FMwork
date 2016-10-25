@@ -18,6 +18,7 @@
                         "image": "/imgs/me.jpg",
                         "jobTitle": "Consulent",
                         "name": "Matteo Burbui",
+						"homeLocation": "Italy",
                         "telephone": "(0039) 392-0560787",
                         "url": "http://www.maxeo.it"
                         }
