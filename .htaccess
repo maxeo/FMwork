@@ -64,8 +64,8 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^maxeo.net [NC]
 RewriteRule (.*) https://www.maxeo.net/$1 [L,R=301,L]
 
-RewriteCond %{HTTPS} off
-RewriteRule (.*)$ https://www.maxeo.net/$1 [L,R=301]
+#RewriteCond %{HTTPS} off
+#RewriteRule (.*)$ https://www.maxeo.net/$1 [L,R=301]
 
 #base per le lingue
 RewriteRule ^it(/.*|$) index.php
