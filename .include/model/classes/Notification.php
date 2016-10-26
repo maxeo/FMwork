@@ -64,7 +64,14 @@ class Notification {
 
     public static function writeLog() {
         global $settings;
-        
+        if (!file_exists(DOCUMENT_ROOT . $settings['log_error_location'])) {
+            $locationError = DOCUMENT_ROOT . $settings['log_error_location'];
+            $locationError = explode("/", $locationError);
+            unset($locationError[count($locationError) - 1]);
+            $locationError = implode("/", $locationError);
+            @mkdir($locationError, "0777", true);
+        }
+
         $additional_var = func_get_args();
         
         if (self::$n_errors > 0) {
