@@ -1,6 +1,7 @@
 <?php
+
 if (!empty($_POST['mail']) && !empty($_POST['content_txt']) && filter_var($_POST['mail'], FILTER_VALIDATE_EMAIL)) {
-    $sender_name = $_POST['mail'] . ' by Maxeo.it';
+    $sender_name = 'Maxeo.net from ' . $_POST['mail'];
     $sender_mail = $_POST['mail'];
     $target_mail = 'info@maxeo.it';
     $object_mail = 'Fast Contact - Contatto Rapido';

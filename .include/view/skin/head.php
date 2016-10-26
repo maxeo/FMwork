@@ -1,7 +1,7 @@
 <head>
     <title><?php
         $thisPgTarget = Pageloader::getData("target");
-        $pageTitle = "Matteo Burbui - Maxeo.it";
+        $pageTitle = "Matteo Burbui - Maxeo.net";
         if (!empty($thisPgTarget) && $thisPgTarget != "home")
             $pageTitle.= " - " . ucwords(str_replace("-", " ", Pageloader::getData("page")));
         echo $pageTitle;

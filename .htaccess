@@ -61,8 +61,11 @@ php_value memory_limit 512M
 RewriteEngine On
 
 #Reindirizzo da senza a www
-RewriteCond %{HTTP_HOST} ^maxeo.it [NC]
-RewriteRule (.*) http://www.maxeo.it/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^maxeo.net [NC]
+RewriteRule (.*) https://www.maxeo.net/$1 [L,R=301,L]
+
+RewriteCond %{HTTPS} off
+RewriteRule (.*)$ https://www.maxeo.net/$1 [L,R=301]
 
 #base per le lingue
 RewriteRule ^it(/.*|$) index.php
