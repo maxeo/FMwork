@@ -71,5 +71,8 @@ RewriteRule (.*) https://www.maxeo.net/$1 [L,R=301,L]
 RewriteRule ^it(/.*|$) index.php
 RewriteRule ^en(/.*|$) index.php
 
+#Pagine Bloccate
+RewriteRule ^_ index.php
+
 #Altre Basi
 RewriteRule img/captcha.png index.php
