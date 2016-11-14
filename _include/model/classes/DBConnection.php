@@ -43,6 +43,8 @@ class DBConnection extends PDO {
 
             $ps = $this->prepare("SET character_set_results = 'utf8', character_set_client = 'utf8', character_set_connection = 'utf8', character_set_database = 'utf8', character_set_server = 'utf8'");
             $ps->execute();
+            $ps = $this->prepare("SET GLOBAL sql_mode=''");
+            $ps->execute();
             $this->conectionActivate = true;
         } catch (PDOException $e) {
             Notification::addAlarm(1,$e);
