@@ -17,13 +17,13 @@
                     </a>
                 </li>
                 <li class="style3">
-                    <a href="http://cloud.demo.maxeo.it/" target="_blank">
+                    <a href="https://cloud.demo.maxeo.net/" target="_blank">
                         <span class="icon fa-cloud"></span>
                         <strong>MyCloud</strong> FileManager scritto in HTML5
                     </a>
                 </li>
                 <li class="style4">
-                    <a href="http://braingame.demo.maxeo.it/" target="_blank">
+                    <a href="https://braingame.demo.maxeo.net/" target="_blank">
                         <span class="icon fa-calculator"></span>
                         <strong>BrainGame</strong> Migliora la tua capacità di contare
                     </a>

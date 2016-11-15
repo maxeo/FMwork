@@ -82,21 +82,21 @@
                 password è possibile scaricare vari contenuti.<br>
                 <a class="to_target" href="#headerTarget">Torna su</a></p>
             <p class="justify" id="proj_mycloud">
-                <span class="titleProj"><a target="_blank" class="no_borderB" href="http://cloud.demo.maxeo.it/">MyCloud</a></span>
+                <span class="titleProj"><a target="_blank" class="no_borderB" href="https://cloud.demo.maxeo.net/">MyCloud</a></span>
                 Un piccolo file manager scritto in php lo creai a suo tempo, è molto potente, ma, dato che ero l'unico ad usarlo ho un po' trascurato l'aspetto sicurezza...<br>
                 La versione demo presente è solo una parte del programma. Prima o poi rilascerò una versione 2.0 alla portata di tutti.<br>
                 <a class="to_target" href="#headerTarget">Torna su</a></p>
             <p class="justify" id="proj_braingame">
-                <span class="titleProj"><a target="_blank" class="no_borderB" href="http://braingame.demo.maxeo.it/">BrainGame:</a></span>
+                <span class="titleProj"><a target="_blank" class="no_borderB" href="https://braingame.demo.maxeo.net/">BrainGame:</a></span>
                 Simpatico giochino che ho creato durante i viaggi in treno all'università. Imposta la difficoltà, il tempo e <i>tira le somme</i>, ma anche le moltiplicazioni; è disponibile anche una versione
                 <i>Timemode</i> dove in caso di risposta corretta viene dato tempo extra.<br>
                 <a class="to_target" href="#headerTarget">Torna su</a></p>
             <p class="justify" id="proj_produzioneoga">
-                <span class="titleProj"><a target="_blank" class="no_borderB" href="http://produzioneoga.demo.maxeo.it/">Produzione OGA:</a></span>
+                <span class="titleProj"><a target="_blank" class="no_borderB" href="https://produzioneoga.demo.maxeo.net/">Produzione OGA:</a></span>
                 Questo è uno dei programmi che ho creato mentre ero in Tipografia. Per varie ragioni non posso mettere a disposizione l'intera piattaforma, quindi vi offro questa versione HTML+JavaScript esportata tramite Firefox<br>
                 <a class="to_target" href="#headerTarget">Torna su</a></p>
             <p class="justify" id="proj_quantificaetichette">
-                <span class="titleProj"><a target="_blank" class="no_borderB" href="http://quantificaetichette.demo.maxeo.it/">Quantifica Etichette:</a></span>
+                <span class="titleProj"><a target="_blank" class="no_borderB" href="https://quantificaetichette.demo.maxeo.net/">Quantifica Etichette:</a></span>
                 Si tratta di una versione completa di una piccola utility, realizzata durante il lavoro in tipografia.<br>
                 <a class="to_target" href="#headerTarget">Torna su</a></p>
             <p class="justify" id="proj_masterkanjiitaly">
@@ -104,15 +104,15 @@
                 Piccolo sito realizzato nel 2012 per apprendere i Kanji: caratteri cinesi dell'alfabeto giapponese. È possibile usare l'applicazione anche senza registrazione, in questo caso i dati verranno salvati sui cookie.<br>
                 <a class="to_target" href="#headerTarget">Torna su</a></p>
             <p class="justify" id="proj_portalelv">
-                <span class="titleProj"><a target="_blank" class="no_borderB" href="http://lv.maxeo.it/">Portale LV:</a></span>
+                <span class="titleProj"><a target="_blank" class="no_borderB" href="https://lv.demo.maxeo.net/">Portale LV:</a></span>
                 Si tratta di un insieme giochini per l'allenamento dell'occhio più alcuni generatori casuali per allenare la propria memoria. Il tutto scritto in HTML e Javascript.<br>
                 <a class="to_target" href="#headerTarget">Torna su</a></p>
             <p class="justify" id="proj_qrcodemaker">
-                <span class="titleProj"><a target="_blank" class="no_borderB" href="http://qrcodemaker.demo.maxeo.it/">QRcode Maker:</a></span>
+                <span class="titleProj"><a target="_blank" class="no_borderB" href="https://qrcodemaker.demo.maxeo.net/">QRcode Maker:</a></span>
                 Questo programmino consente di creare qrcode personalizzati, sia per quanto riguarda il testo, sia per quanto riguarda il design, imprimendo immagini di sfondo, stondando o sfumando i pixel del codice.<br>
                 <a class="to_target" href="#headerTarget">Torna su</a></p>
             <p class="justify" id="proj_fyoulletto">
-                <span class="titleProj"><a target="_blank" class="no_borderB" href="http://fyoulletto.demo.maxeo.it">Fyoulletto:</a></span>
+                <span class="titleProj"><a target="_blank" class="no_borderB" href="https://fyoulletto.demo.maxeo.net">Fyoulletto:</a></span>
                 Questo è stato il primo programma gestionale che ho creato. È strutturato per gestire i bambini dell'Asilo. È nato tra il 2009 e il 2010. Allora non erano disponibili database mysql con spazio gratuito così, per funzionare su <a href="http://it.altervista.org/">Altervista</a>,  è stato realizzato senza, ma nonostante tutto fa il suo dovere. (<i>I dati inseriti nella demo sono fittizi</i>)<br>
                 <a class="to_target" href="#headerTarget">Torna su</a></p>
         </section>
