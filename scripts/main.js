@@ -47,9 +47,9 @@ $(document).ready(function () {
 
 
     /***    Fix Safari        ***/
-
-    if (window.navigator.userAgent.indexOf("Safari") > -1) {
-        loadPercent();
+var is_safari=false;
+    if (window.navigator.userAgent.indexOf("Safari") > -1 && window.navigator.userAgent.indexOf("Chrome") == -1) {
+        is_safari=true;
     }
 
 
@@ -85,7 +85,8 @@ $(document).ready(function () {
     var navHeight = parseInt($("#nav").css("height"));
     var perc_are_loaded = 0;
     $(document).bind("scroll", function () {
-        if (perc_are_loaded == 0 && $('.progress-circle-prog').is(':visible') && isScrolledIntoView(".progress-circle-prog")) {
+        
+        if (perc_are_loaded == 0 && ($('.progress-circle-prog').is(':visible') ||  is_safari) && isScrolledIntoView(".progress-circle-prog")) {
             perc_are_loaded = 1;
             setTimeout(function () {
                 loadPercent();
