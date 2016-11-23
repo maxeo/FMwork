@@ -3,9 +3,9 @@
         $thisPgTarget = Pageloader::getData("target");
         $pageTitle = "Matteo Burbui - Maxeo.net";
         if (!empty($thisPgTarget) && $thisPgTarget != "home")
-            $pageTitle.= " - " . ucwords(str_replace("-", " ", Pageloader::getData("page")));
+            $pageTitle .= " - " . ucwords(str_replace("-", " ", Pageloader::getData("page")));
         echo $pageTitle;
-    ?></title>
+        ?></title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -36,7 +36,7 @@
         $seo_alternate_lang = "en";
     $seo_alternate_href = Pageloader::pageFromTarget(Pageloader::getData("target"), false, $seo_alternate_lang);
     for ($i = 0; !empty(Pageloader::getData($i)); $i++)
-        $seo_alternate_href.="/" . Pageloader::getData(0);
+        $seo_alternate_href .= "/" . Pageloader::getData(0);
 
     if (@explode("/", $_SERVER['REQUEST_URI'])[1] != Pageloader::getData("lang")) {
         $seo_alternate_href = "/";
@@ -47,6 +47,8 @@
         echo '<meta property="og:description" content="' . Pageloader::getData("metadescription") . '">' . "\n";
     }
     ?>
+    <?php if (Pageloader::getData("target") == "home" && @explode("/", $_SERVER['REQUEST_URI'])[1] != "") {
+        ?><link rel="canonical" href="https://www.maxeo.net"/><?php } ?>
     <meta property="og:type" content="site">
     <meta property="og:title" content="<?php echo $pageTitle; ?>">
     <meta property="og:url" content="http://www.maxeo.it">
